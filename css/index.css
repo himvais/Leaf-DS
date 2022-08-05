@@ -104,10 +104,6 @@ a:link, a:visited, a:hover, a:active {
     border-right: 3px solid rgb(1, 88, 33);
 }
 
-.main{
-    /* do we need some styling for whole content section? */
-}
-
 .hero{
     padding: 24px;
     background-color: #f6f9f6;
@@ -120,5 +116,43 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .content{ 
-    
+    margin-left: 24px;
+}
+
+.section{
+    margin-bottom: 32px;
+}
+
+.section h2{
+    margin-bottom: 0px;
+}
+
+.section-grid{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    gap: 24px;
+}
+
+.button{
+    padding-top: 8px; 
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-right: 16px;
+    border-radius: 2px;
+}
+
+.primary-button{
+    background-color: green;
+    color: white;
+}
+
+.secondary-button{
+    border: #333333 solid 1px;
+}
+
+.card{
+    padding: 16px;
+    border-radius: 2px;
+    border: #DDDDDD solid 1px
 }
