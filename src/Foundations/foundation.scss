@@ -1,5 +1,5 @@
 @use 'colours' as c;
 
 .test{
-    background-color: c.$test;
+    background-color: c.$primary-color;
 }

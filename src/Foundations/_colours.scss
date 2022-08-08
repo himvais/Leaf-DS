@@ -1,1 +1,12 @@
-$test: #333333;
+//Primitive or Sprectrum Colors: A collection of all the colours available for us
+@use "sass:map";
+
+$green: (
+    "1": #EEF7F3, 
+    "2": #E4F7EF,
+    "3": #DAF7EA,
+    "4": #C6F7E1,
+    "5": #007A5F,
+);
+
+$primary-color: map.get($green, "1");
