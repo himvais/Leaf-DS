@@ -1,4 +1,4 @@
-//Primitive or Sprectrum Colors: A collection of all the colours available for us
+//Primitive or Sprectrum Colors or Colour Space: A collection of all the colours available for us
 @use "sass:map";
 
 $green: (
@@ -7,6 +7,28 @@ $green: (
     "3": #DAF7EA,
     "4": #C6F7E1,
     "5": #007A5F,
+    "6": #123423,
+    "7": #123423,
+    "8": #123423
 );
 
-$primary-color: map.get($green, "1");
+$yellow: ();
+
+$orange: ();
+
+$red: ();
+
+$blue: ();
+
+$slate: ();
+
+$grey: ();
+
+//Colour variable or tokens to use in UI
+
+$primary-color: map.get($green, "5");
+
+//Colour utility classes
+.background-primary{
+    background-color: $primary-color;
+}
