@@ -1,6 +1,47 @@
 @use "sass:map";
-@use 'colours' as c;
+@use "colours" as c;
+@use "theme" as t;
 
-.test{
-    background-color: c.$primary-color;
+.bg-white{
+    background-color: #FFFFFF;
+}
+
+.bg-light-100{
+    background-color: map.get(t.$theme, "100");
+}
+
+.bg-light-200{
+    background-color: map.get(t.$theme, "200");
+}
+
+.bg-success{
+    background-color: map.get(c.$status, "success");
+}
+
+.bg-warning{
+    background-color: map.get(c.$status, "warning");
+}
+
+.bg-error{
+    background-color: map.get(c.$status, "error");
+}
+
+.bg-transparent{
+    background-color: transparent;
+}
+
+.bg-primary{
+    background-color: map.get(t.$theme, "500");
+}
+
+.bg-dark-100{
+    background-color: map.get(t.$theme, "600");
+}
+
+.bg-dark-200{
+    background-color: map.get(t.$theme, "700");
+}
+
+.bg-black{
+    background-color: #000000;
 }
