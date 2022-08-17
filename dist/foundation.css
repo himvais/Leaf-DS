@@ -1,0 +1,45 @@
+.bg-white {
+  background-color: #FFFFFF;
+}
+
+.bg-light-100 {
+  background-color: #000000;
+}
+
+.bg-light-200 {
+  background-color: #111111;
+}
+
+.bg-success {
+  background-color: #000000;
+}
+
+.bg-warning {
+  background-color: #111111;
+}
+
+.bg-error {
+  background-color: #222222;
+}
+
+.bg-transparent {
+  background-color: transparent;
+}
+
+.bg-primary {
+  background-color: #444444;
+}
+
+.bg-dark-100 {
+  background-color: #555555;
+}
+
+.bg-dark-200 {
+  background-color: #666666;
+}
+
+.bg-black {
+  background-color: #000000;
+}
+
+/*# sourceMappingURL=foundation.css.map */
