@@ -119,19 +119,40 @@ $data-vis: (
 
 //Status colours
 $status: (
-    'success':map.get($green, "5"),
-    'warning': map.get($yellow, "5"),
-    'error': map.get($red, "5"),
-    'info': map.get($blue, "5")
+    'light':(
+        'success':map.get($green, "2"),
+        'warning': map.get($yellow, "2"),
+        'error': map.get($red, "2"),
+        'info': map.get($blue, "2")                                                                                       
+    ),
+
+    "dark":(
+        'success':map.get($green, "7"),
+        'warning': map.get($yellow, "7"),
+        'error': map.get($red, "7"),
+        'info': map.get($blue, "7")
+    )
+    
 );
 
 $semantics: (
-    'red': map.get($red, "3"),
-    'amber': map.get($orange, "3"),
-    'green': map.get($green, "3"),
-    'env': map.get($green, "7"),
-    'soc': map.get($orange, "7"),
-    "gov": map.get($slate, "7")
+    'light':(
+        'red': map.get($red, "3"),
+        'amber': map.get($orange, "3"),
+        'green': map.get($green, "3"),
+        'env': map.get($green, "3"),
+        'soc': map.get($orange, "3"),
+        "gov": map.get($slate, "3")
+    ),
+    'dark':(
+        'red': map.get($red, "7"),
+        'amber': map.get($orange, "7"),
+        'green': map.get($green, "7"),
+        'env': map.get($green, "7"),
+        'soc': map.get($orange, "7"),
+        "gov": map.get($slate, "7")
+    )
+    
 );
 
 //Colour palette generator function, an automated function to generate a colour palette based on a single input, optional to use. 
