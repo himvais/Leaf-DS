@@ -3,7 +3,7 @@
 @use "theme" as t;
 
 .bg-white{
-    background-color: #FFFFFF;
+    background-color: map.get(c.$grey, "0");
 }
 
 .bg-light-100{
@@ -15,15 +15,15 @@
 }
 
 .bg-success{
-    background-color: map.get(c.$status, "success");
+    background-color: map.get(c.$status, "$light", "success");
 }
 
 .bg-warning{
-    background-color: map.get(c.$status, "warning");
+    background-color: map.get(c.$status, "$light", "warning");
 }
 
 .bg-error{
-    background-color: map.get(c.$status, "error");
+    background-color: map.get(c.$status, "$light", "error");
 }
 
 .bg-transparent{
@@ -43,5 +43,5 @@
 }
 
 .bg-black{
-    background-color: #000000;
+    background-color: map.get(c.$grey, "11");
 }
