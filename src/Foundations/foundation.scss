@@ -78,7 +78,6 @@
     background-color: map.get(c.$status, "light", "warning");
 }
 
-
 .bg-error{
     background-color: map.get(c.$status, "light", "error");
 }

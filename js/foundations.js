@@ -38,3 +38,43 @@ $("#typography").click(function(){
     resetActive("#typography");
 });
 
+$("#icon").click(function(){
+    $("#content").load("_icons.html");
+    resetActive("#icon");
+});
+
+$("#grid").click(function(){
+    $("#content").load("_grid.html");
+    resetActive("#grid");
+});
+
+$("#spacing").click(function(){
+    $("#content").load("_spacing.html");
+    resetActive("#spacing");
+});
+
+$("#elevation").click(function(){
+    $("#content").load("_elevation.html");
+    resetActive("#elevation");
+});
+
+$("#border").click(function(){
+    $("#content").load("_border.html");
+    resetActive("#border");
+});
+
+$("#motion").click(function(){
+    $("#content").load("_motion.html");
+    resetActive("#motion");
+});
+
+$("#illustrations").click(function(){
+    $("#content").load("_illustrations.html");
+    resetActive("#illustrations");
+});
+
+$("#accesibility").click(function(){
+    $("#content").load("_accesibility.html");
+    resetActive("#accesibility");
+});
+
