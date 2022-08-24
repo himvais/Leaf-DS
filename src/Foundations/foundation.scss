@@ -1,6 +1,7 @@
 @use "sass:map";
 @use "colours" as c;
 @use "theme" as t;
+@use "typography.scss" as y;
 
 .bg-transparent{
     background-color: transparent;

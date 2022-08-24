@@ -1,0 +1,67 @@
+@use "sass:map";
+@use "colours" as c;
+@use "theme" as t;
+
+$size : (
+    "100": 1px,
+    "200": 2px,
+    "300": 3px,
+    "400": 4px,
+    "500": 5px,
+    "600": 6px,
+    "700": 7px,
+    "800": 8px,
+    "900": 9px
+);
+
+$weight: (
+    light, normal, medium, bold
+);
+
+$align: (
+    left, right, center, justify
+);
+
+$colour: (
+    "primary": map.get(t.$theme, "700"),
+    "secondary": map.get(t.$theme, "600"),
+    "light": map.get(t.$theme, "100"),
+    "link": map.get(c.$blue, "5"),
+    "disabled": map.get(c.$grey, "5")
+);
+
+.html, .body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@each $key, $value in $size {
+    .text-size-#{$key}{
+        font-size: $value;
+        line-height: 1em;
+    }
+}
+
+@each $key in $weight {
+    .text-weight-#{$key}{
+        font-weight: $key;
+    }
+}
+
+@each $key in $align {
+    .text-align-#{$key}{
+        text-align: $key;
+    }
+}
+
+@each $key, $value in $colour {
+    .text-color-#{$key}{
+        color: $value;
+    }
+}
+
+.text-italic {
+    font-style: italic;
+}
+
