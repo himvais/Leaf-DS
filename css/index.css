@@ -177,3 +177,8 @@ th, td {
     padding-left: 16px;
     padding-right: 16px;
 }
+
+.sample {
+    height: 80px;
+    width: 80px;
+}
