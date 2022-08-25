@@ -1,3 +1,6 @@
 {
-    "liveSassCompile.settings.forceBaseDirectory": "/src"
+    "liveSassCompile.settings.forceBaseDirectory": "/src",
+    "liveSassCompile.settings.formats": [
+        {"savePath": "/dist", "format": "expanded", "extensionName": ".css"}
+    ]
 }
