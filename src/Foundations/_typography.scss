@@ -15,7 +15,10 @@ $size : (
 );
 
 $weight: (
-    light, normal, medium, bold
+    "light":200, 
+    "normal":400,
+    "semibold":600, 
+    "bold":800
 );
 
 $align: (
@@ -43,9 +46,9 @@ $colour: (
     }
 }
 
-@each $key in $weight {
+@each $key, $value in $weight {
     .text-weight-#{$key}{
-        font-weight: $key;
+        font-weight: $value;
     }
 }
 

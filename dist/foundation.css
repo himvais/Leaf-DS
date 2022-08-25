@@ -1,68 +1,68 @@
-.html, .body {
+.html, body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 .text-size-100 {
-  font-size: 1px;
+  font-size: 12px;
   line-height: 1em;
 }
 
 .text-size-200 {
-  font-size: 2px;
+  font-size: 14px;
   line-height: 1em;
 }
 
 .text-size-300 {
-  font-size: 3px;
+  font-size: 16px;
   line-height: 1em;
 }
 
 .text-size-400 {
-  font-size: 4px;
+  font-size: 18px;
   line-height: 1em;
 }
 
 .text-size-500 {
-  font-size: 5px;
+  font-size: 20px;
   line-height: 1em;
 }
 
 .text-size-600 {
-  font-size: 6px;
+  font-size: 24px;
   line-height: 1em;
 }
 
 .text-size-700 {
-  font-size: 7px;
+  font-size: 32px;
   line-height: 1em;
 }
 
 .text-size-800 {
-  font-size: 8px;
+  font-size: 48px;
   line-height: 1em;
 }
 
 .text-size-900 {
-  font-size: 9px;
+  font-size: 56px;
   line-height: 1em;
 }
 
 .text-weight-light {
-  font-weight: light;
+  font-weight: 200;
 }
 
 .text-weight-normal {
-  font-weight: normal;
+  font-weight: 400;
 }
 
-.text-weight-medium {
-  font-weight: medium;
+.text-weight-semibold {
+  font-weight: 600;
 }
 
 .text-weight-bold {
-  font-weight: bold;
+  font-weight: 800;
 }
 
 .text-align-left {
