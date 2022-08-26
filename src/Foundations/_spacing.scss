@@ -1,0 +1,23 @@
+@use "sass:map";
+
+$space: (
+    "100": 4px, 
+    "200": 8px,
+    "300": 16px,
+    "400": 24px,
+    "500": 32px, 
+    "600": 48px, 
+    "700": 64px, 
+    "800": 88px, 
+    "900": 128px 
+);
+
+$directions: (
+    "t": top, 
+    "b": bottom, 
+    "l": left, 
+    "r": right, 
+    "x": (left, right), 
+    "y": (top, bottom)
+);
+

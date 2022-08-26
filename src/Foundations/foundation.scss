@@ -3,6 +3,7 @@
 @use "theme" as t;
 @use "typography.scss" as y;
 @use "elevation.scss" as e;
+@use "border" as b;
 
 .bg-transparent{
     background-color: transparent;
