@@ -1,0 +1,63 @@
+@use "sass:map";
+@use "colours" as c;
+@use "theme" as t;
+
+
+$shadow:(
+    "elevation-blur" :(
+        // "000": 0px ,
+        "100": 8px,
+        "200": 16px,
+        "300": 32px,
+        "400": 48px,
+        "500": 64px
+),
+
+    "direction" : (
+
+        "center":(
+            "x":0px,
+            "y":8px
+        ),
+
+        "left":(
+            "x":-16px,
+            "y":8px
+        ),
+
+        "right":(
+            "x":16px,
+            "y":8px
+        ),
+
+        "top":(
+            "x":0px,
+            "y":16px
+        ),
+
+        "bottom":(
+            "x":0px,
+            "y":-16px
+        ),
+
+    )
+);
+
+// .elevation-100-center {
+//     $x: map.get($shadow,"direction","center","x");
+//     $y: map.get($shadow,"direction","center","y");
+//     $blur: map.get($shadow,"elevation-blur","100");
+//     box-shadow: $x $y $blur rgba($black, 0.4);
+// }
+
+//why is this not linked with css?
+@each $elevation-blur,$direction in $shadow{
+        .elevation-#{$blur}-#{$direc} {
+            box-shadow: map.get($shadow,"direction","#{$direc}","x") //x 
+            map.get($shadow,"direction","#{$direc}","y") //y
+            map.get($shadow,"elevation-blur","#{$blur}") //blur
+            rgba(map.get(c.$colour), 0.4); //colour
+        }
+
+}
+

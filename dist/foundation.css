@@ -188,3 +188,20 @@
 .hover\:bg-error:hover {
   background-color: #F7E4EA;
 }/*# sourceMappingURL=foundation.css.map */
+
+.elevation-100-center{
+  box-shadow: 0px 8px 8px #0000003b;
+}
+.elevation-200-center{
+  box-shadow: 0px 8px 16px #0000005d;
+}
+.elevation-300-center{
+  box-shadow: 0px 8px 32px #0000005d;
+}
+.elevation-400-center{
+  box-shadow: 0px 8px 48px #0000005d;
+}
+.elevation-500-center{
+  box-shadow: 0px 8px 64px #0000005d;
+}
+
