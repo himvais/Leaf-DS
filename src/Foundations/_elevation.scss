@@ -1,47 +1,101 @@
 @use "sass:map";
+@use "sass:list";
 @use "colours" as c;
 @use "theme" as t;
 
-
-$shadow:(
-    "elevation-blur" :(
-        // "000": 0px ,
-        "100": 8px,
-        "200": 16px,
-        "300": 32px,
-        "400": 48px,
-        "500": 64px
-),
-
-    "direction" : (
-
-        "center":(
-            "x":0px,
-            "y":8px
-        ),
-
-        "left":(
-            "x":-16px,
-            "y":8px
-        ),
-
-        "right":(
-            "x":16px,
-            "y":8px
-        ),
-
-        "top":(
-            "x":0px,
-            "y":16px
-        ),
-
-        "bottom":(
-            "x":0px,
-            "y":-16px
-        ),
-
-    )
+$size : (
+    "100": 2px, 
+    "200": 4px, 
+    "300": 8px, 
+    "400": 16px
 );
+
+$direction : (
+    "left", "right", "top", "bottom", "default"
+);
+
+$color: (
+    "default": rgba(0,0,0,0.2),
+    "brand": map.get(t.$theme, "400")
+);
+
+@mixin shadowgen($x, $y, $size, $color) {
+    -moz-box-shadow: $x $y $size $color;
+    -webkit-box-shadow: $x $y $size $color;
+    box-shadow: $x $y $size $color;
+};
+
+@function calcDirection($size, $direction){
+    @if $direction == "left" {
+        @return (-$size, 0);
+    }
+    @if $direction == "right" {
+        @return ($size, 0);
+    }
+    @if $direction == "top" {
+        @return (0, -$size);
+    }
+    @if $direction == "bottom" {
+        @return (0, $size);
+    }
+    @if $direction == "default" {
+        @return (0, 0);
+    }
+}
+
+@each $size-key, $size-value in $size {
+    @each $direction-key in $direction {
+        $xy : calcDirection($size-value, $direction-key);
+        @each $color-key, $color-value in $color {
+            .elevation-#{$size-key}-#{$direction-key}-#{$color-key}{
+                @include shadowgen(list.nth($xy,1), list.nth($xy,2), $size-value, $color-value);
+            }   
+        }
+    }
+}
+
+
+
+
+// $shadow:(
+//     "elevation-blur" :(
+//         // "000": 0px ,
+//         "100": 8px,
+//         "200": 16px,
+//         "300": 32px,
+//         "400": 48px,
+//         "500": 64px
+// ),
+
+//     "direction" : (
+
+//         "center":(
+//             "x":0px,
+//             "y":8px
+//         ),
+
+//         "left":(
+//             "x":-16px,
+//             "y":8px
+//         ),
+
+//         "right":(
+//             "x":16px,
+//             "y":8px
+//         ),
+
+//         "top":(
+//             "x":0px,
+//             "y":16px
+//         ),
+
+//         "bottom":(
+//             "x":0px,
+//             "y":-16px
+//         ),
+
+//     )
+// );
 
 // .elevation-100-center {
 //     $x: map.get($shadow,"direction","center","x");
@@ -51,13 +105,13 @@ $shadow:(
 // }
 
 //why is this not linked with css?
-@each $elevation-blur,$direction in $shadow{
-        .elevation-#{$blur}-#{$direc} {
-            box-shadow: map.get($shadow,"direction","#{$direc}","x") //x 
-            map.get($shadow,"direction","#{$direc}","y") //y
-            map.get($shadow,"elevation-blur","#{$blur}") //blur
-            rgba(map.get(c.$colour), 0.4); //colour
-        }
+// @each $elevation-blur,$direction in $shadow{
+//         .elevation-#{$blur}-#{$direc} {
+//             box-shadow: map.get($shadow,"direction","#{$direc}","x") //x 
+//             map.get($shadow,"direction","#{$direc}","y") //y
+//             map.get($shadow,"elevation-blur","#{$blur}") //blur
+//             rgba(map.get(c.$colour), 0.4); //colour
+//         }
 
-}
+// }
 
