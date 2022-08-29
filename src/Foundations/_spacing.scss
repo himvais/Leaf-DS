@@ -1,4 +1,10 @@
 @use "sass:map";
+@use "sass:list";
+
+$type : (
+    "m": margin, 
+    "p": padding
+);
 
 $space: (
     "100": 4px, 
@@ -20,4 +26,8 @@ $directions: (
     "x": (left, right), 
     "y": (top, bottom)
 );
+
+@each $key, $value in $type{
+
+}
 
