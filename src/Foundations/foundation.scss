@@ -4,6 +4,8 @@
 @use "typography.scss" as y;
 @use "elevation.scss" as e;
 @use "border" as b;
+@use "spacing" as s;
+@use "layout" as l;
 
 .bg-transparent{
     background-color: transparent;

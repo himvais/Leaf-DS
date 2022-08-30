@@ -43,8 +43,8 @@ $("#icon").click(function(){
     resetActive("#icon");
 });
 
-$("#grid").click(function(){
-    $("#content").load("_grid.html");
+$("#layout").click(function(){
+    $("#content").load("_layout.html");
     resetActive("#grid");
 });
 
