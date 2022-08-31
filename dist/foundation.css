@@ -1006,6 +1006,60 @@
   place-content: space-evenly;
 }
 
+.content-x-start {
+  justify-items: start;
+}
+
+.content-x-end {
+  justify-items: end;
+}
+
+.content-x-center {
+  justify-items: center;
+}
+
+.content-x-stretch {
+  justify-items: stretch;
+}
+
+.content-y-start {
+  align-items: start;
+}
+
+.content-y-end {
+  align-items: end;
+}
+
+.content-y-center {
+  align-items: center;
+}
+
+.content-y-stretch {
+  align-items: stretch;
+}
+
+.content-xy-start {
+  place-items: start;
+}
+
+.content-xy-end {
+  place-items: end;
+}
+
+.content-xy-center {
+  place-items: center;
+}
+
+.content-xy-stretch {
+  place-items: stretch;
+}
+
+.animate {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .bg-transparent {
   background-color: transparent;
 }

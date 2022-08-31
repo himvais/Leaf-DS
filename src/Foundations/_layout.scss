@@ -66,56 +66,20 @@ $content: (start, end, center, stretch);
 //content x
 @each $key in $content{
     .content-x-#{$key}{
-        justify-items: $value;
+        justify-items: $key;
     }
 }
 
 //content y
 @each $key in $content{
     .content-y-#{$key}{
-        align-items: $value;
+        align-items: $key;
     }
 }
 
 //content xy
 @each $key in $content{
     .content-xy-#{$key}{
-        place-items: $value;
+        place-items: $key;
     }
 }
-
-
-
-//display classes
-
-// .block{
-//     display:block;
-// }
-
-// .inline{
-//     display: inline;
-// }
-
-// .inline-block{
-//     display:inline-block;
-// }
-
-// .flex{
-//     display:flex;
-// }
-
-// .inline-flex{
-//     display:inline-flex;
-// }
-
-// .grid{
-//     display:grid;
-// }
-
-// .inline-grid{
-//     display: inline-grid;
-// }
-
-// .hidden{
-//     display: none;
-// }
