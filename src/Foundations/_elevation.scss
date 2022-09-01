@@ -48,7 +48,8 @@ $color: (
         $xy : calcDirection($size-value, $direction-key);
         @each $color-key, $color-value in $color {
             .elevation-#{$size-key}-#{$direction-key}-#{$color-key}{
-                @include shadowgen(list.nth($xy,1), list.nth($xy,2), $size-value, $color-value);
+                $blur : calc(#{$size-value} + (0.55 * #{$size-value}));
+                @include shadowgen(list.nth($xy,1), list.nth($xy,2), $blur, rgba($color-value,0.15));
             }   
         }
     }
