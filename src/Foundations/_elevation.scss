@@ -15,8 +15,8 @@ $direction : (
 );
 
 $color: (
-    "default": rgba(0,0,0,0.3),
-    "brand": rgba(map.get(t.$theme, "400"),0.4)
+    "default": rgba(0,0,0,0.2),
+    "brand": rgba(map.get(t.$theme, "400"),0.35)
 );
 
 @mixin shadowgen($x, $y, $size, $color) {
