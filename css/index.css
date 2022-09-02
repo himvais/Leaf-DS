@@ -10,6 +10,9 @@ a:link, a:visited, a:hover, a:active {
     color: #333333;
 }
 
+.text-light{
+    opacity: 60%;
+}
 .navbar{
     height: 56px;
     width: 100%;
