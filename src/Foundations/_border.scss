@@ -19,7 +19,7 @@ $width: (
 $color: (
     "default": #DDDDDD, 
     "dark": #333333,
-    "brand": map.get(t.$theme, "300")
+    "brand": map.get(t.$theme, "400")
 );
 
 $style : (solid, dashed, dotted, hidden, none);
