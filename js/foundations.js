@@ -45,7 +45,7 @@ $("#icon").click(function(){
 
 $("#layout").click(function(){
     $("#content").load("_layout.html");
-    resetActive("#grid");
+    resetActive("#layout");
 });
 
 $("#spacing").click(function(){

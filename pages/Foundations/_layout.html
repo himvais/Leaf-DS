@@ -1,0 +1,128 @@
+<div class="hero">
+    <h1>Layouts</h1>
+    <p class="lead">Layout system in leaf-foundation allows you to create various layouts using CSS grids and Flex.</p>
+    <span><strong>_layout.scss</strong></span>
+</div>
+<div class="content" style="width:80%;">
+    <h3>Display API</h3>
+    <p>Display classes follow .d-* syntax, The following classes can be used for changing the css display property of any element.</p>
+    <br>
+    <table>
+        <tr>
+            <th>class</th>
+            <th>property</th>
+        </tr>
+        <tr>
+            <td>.d-block</td>
+            <td>display:block</td>
+        </tr>
+        <tr>
+            <td>.d-inline</td>
+            <td>display:inline</td>
+        </tr>
+        <tr>
+            <td>.d-inline-block</td>
+            <td>display:inline-block</td>
+        </tr>
+        <tr>
+            <td>.d-flex</td>
+            <td>display:flex</td>
+        </tr>
+        <tr>
+            <td>.d-inline-flex</td>
+            <td>display:inline-flex</td>
+        </tr>
+        <tr>
+            <td>.d-grid</td>
+            <td>display:grid</td>
+        </tr>
+        <tr>
+            <td>.d-inline-grid</td>
+            <td>display:inline-grid</td>
+        </tr>
+        <tr>
+            <td>.d-hidden</td>
+            <td>display:hidden</td>
+        </tr>
+    </table>
+    <br>
+    <h3>Flow API</h3>
+    <p>The Flow API allows controlling how the content will flow inside a parent grid or flex container. It works with both grid and flex based layouts.</p>
+    <p>Class formula: <strong>.flow-[x|y|xy]-[start|end|center|between|around|evenly]</p></strong>
+    <br>
+    <table>
+        <tr>
+            <th>class</th>
+            <th>effect</th>
+            <th>CSS</th>
+        </tr>
+        <tr>
+            <td>.flow-x-start</td>
+            <td>horizontally, left to right</td>
+            <td>justify-content: flex-start</td>
+        </tr>
+        <tr>
+            <td>.flow-x-end</td>
+            <td>horzontally, right to left</td>
+            <td>justify-content: flex-end</td>
+        </tr>
+        <tr>
+            <td>.flow-x-center</td>
+            <td>horizontally, aligned in center</td>
+            <td>justify-content: center</td>
+        </tr>
+        <tr>
+            <td>.flow-x-between</td>
+            <td>horizontally, the space between content splits evenly</td>
+            <td>justify-content: space-between</td>
+        </tr>
+        <tr>
+            <td>.flow-x-around</td>
+            <td>horizontally, the space around content is distributed evently</td>
+            <td>justify-content: space-around</td>
+        </tr>
+        <tr>
+            <td>.flow-x-evenly</td>
+            <td>horizontally, the content is spread evenly in container</td>
+            <td>justify-content: space-evenly</td>
+        </tr>
+        <tr>
+            <th colspan="3">Replace x with "y" for vertical and "xy" for both vertical and horizontal results.</th>
+        </tr>
+    </table>
+    <br>
+    <h3>Content API</h3>
+    <p>When using a grid or flex layout, the content api helps with setting the behaviour of the content within it's row/column or container</p>
+    <p>Formula: <strong>.content-[x|y|xy]-[start|end|center|stretch]</strong></p>
+    <table>
+        <tr>
+            <th>class</th>
+            <th>effect</th>
+            <th>CSS</th>
+        </tr>
+        <tr>
+            <td>.content-x-start</td>
+            <td>Items are placed left to right</td>
+            <td>justify-items: start</td>
+        </tr>
+        <tr>
+            <td>.content-x-end</td>
+            <td>Items are placed right to left</td>
+            <td>justify-items: end</td>
+        </tr>
+        <tr>
+            <td>.content-x-center</td>
+            <td>Items are placed at the center of parent</td>
+            <td>justify-items: center</td>
+        </tr>
+        <tr>
+            <td>.content-x-stretch</td>
+            <td>Items are streched to occupy full width of parent</td>
+            <td>Justify-items: stretch</td>
+        </tr>
+        <tr>
+            <th colspan="3">Replace x with "y" for vertical and "xy" for both vertical & horizontal results.</th>
+        </tr>
+    </table>
+    <br><br>
+</div>
