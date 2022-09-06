@@ -10,9 +10,6 @@ a:link, a:visited, a:hover, a:active {
     color: #333333;
 }
 
-.text-light{
-    opacity: 60%;
-}
 .navbar{
     height: 56px;
     width: 100%;
@@ -181,7 +178,20 @@ th, td {
     padding-right: 16px;
 }
 
+
+.text-light{
+    opacity: 60%;
+}
 .sample {
     height: 80px;
     width: 80px;
+}
+
+.blank-square{
+    height: 60px; 
+    width:60px;
+}
+
+.hover-color:hover{
+    background-color: #333333;
 }
