@@ -1,0 +1,58 @@
+@use "sass:map";
+@use "sass:list";
+@use "colours" as c;
+@use "theme" as t;
+
+$size : (
+    "100": 2px, 
+    "200": 4px, 
+    "300": 8px, 
+    "400": 16px
+);
+
+$direction : (
+    "left", "right", "top", "bottom", "default"
+);
+
+$color: (
+    "default": rgba(0,0,0,0.2),
+    "brand": rgba(map.get(t.$theme, "400"),0.35)
+);
+
+@mixin shadowgen($x, $y, $size, $color) {
+    -moz-box-shadow: $x $y $size $color;
+    -webkit-box-shadow: $x $y $size $color;
+    box-shadow: $x $y $size $color;
+};
+
+@function calcDirection($size, $direction){
+    @if $direction == "left" {
+        @return (-$size, 0);
+    }
+    @if $direction == "right" {
+        @return ($size, 0);
+    }
+    @if $direction == "top" {
+        @return (0, -$size);
+    }
+    @if $direction == "bottom" {
+        @return (0, $size);
+    }
+    @if $direction == "default" {
+        @return (0, 0);
+    }
+}
+
+@each $size-key, $size-value in $size {
+    @each $direction-key in $direction {
+        $xy : calcDirection($size-value, $direction-key);
+        @each $color-key, $color-value in $color {
+            .elevation-#{$size-key}-#{$direction-key}-#{$color-key}{
+                $blur : calc(#{$size-value} + (0.55 * #{$size-value}));
+                @include shadowgen(list.nth($xy,1), list.nth($xy,2), $blur, $color-value);
+            }   
+        }
+    }
+}
+
+

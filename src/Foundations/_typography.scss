@@ -1,0 +1,76 @@
+@use "sass:map";
+@use "sass:list";
+@use "colours" as c;
+@use "theme" as t;
+
+$size : (
+    //"class suffix" : (font-size, line-height)
+    "100": (12px, 16px),
+    "200": (14px, 16px),
+    "300": (16px, 24px),
+    "400": (18px, 24px),
+    "500": (20px, 24px),
+    "600": (24px, 32px),
+    "700": (32px, 48px),
+    "800": (48px, 56px),
+    "900": (56px, 64px)
+);
+
+$weight: (
+    "light":200, 
+    "normal":400,
+    "semibold":600, 
+    "bold":800
+);
+
+$align: (
+    left, right, center, justify
+);
+
+$colour: (
+    "primary": map.get(t.$theme, "700"),
+    "secondary": map.get(t.$theme, "600"),
+    "light": map.get(t.$theme, "100"),
+    "link": map.get(c.$blue, "5"),
+    "disabled": map.get(c.$grey, "5")
+);
+
+.html, body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@each $key, $value in $size {
+    .text-size-#{$key}{
+        font-size: list.nth($value, 1);
+        line-height: list.nth($value, 2);
+    }
+}
+
+@each $key, $value in $weight {
+    .text-weight-#{$key}{
+        font-weight: $value;
+    }
+}
+
+@each $key in $align {
+    .text-align-#{$key}{
+        text-align: $key;
+    }
+}
+
+@each $key, $value in $colour {
+    .text-color-#{$key}{
+        color: $value;
+    }
+}
+
+.text-italic {
+    font-style: italic;
+}
+
+.text-underline {
+    text-decoration: underline;
+}
+
