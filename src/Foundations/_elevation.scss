@@ -1,22 +1,11 @@
 @use "sass:map";
 @use "sass:list";
-@use "colours" as c;
-@use "theme" as t;
+@use "variables" as v;
 
-$size : (
-    "100": 2px, 
-    "200": 4px, 
-    "300": 8px, 
-    "400": 16px
-);
-
-$direction : (
-    "left", "right", "top", "bottom", "default"
-);
 
 $color: (
-    "default": rgba(0,0,0,0.2),
-    "brand": rgba(map.get(t.$theme, "400"),0.35)
+    "default": rgba(map.get(v.$color-base, "grey", "1100"),0.2),
+    "brand": rgba(map.get(v.$color-theme, "400"),0.35)
 );
 
 @mixin shadowgen($x, $y, $size, $color) {
@@ -43,8 +32,8 @@ $color: (
     }
 }
 
-@each $size-key, $size-value in $size {
-    @each $direction-key in $direction {
+@each $size-key, $size-value in v.$elevation-size {
+    @each $direction-key in v.$elevation-direction {
         $xy : calcDirection($size-value, $direction-key);
         @each $color-key, $color-value in $color {
             .elevation-#{$size-key}-#{$direction-key}-#{$color-key}{
