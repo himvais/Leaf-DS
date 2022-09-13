@@ -10,11 +10,17 @@ a:link, a:visited, a:hover, a:active {
     color: #333333;
 }
 
+#navigation{
+    position:sticky;
+    position: -webkit-sticky;
+    top:0;
+    z-index: 2;
+}
+
 .navbar{
     height: 56px;
     width: 100%;
     background-color: #FFFFFF;
-    position:sticky;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -63,9 +69,13 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .sidebar{
+    margin-top: 2px;
     background-color: white;
     border-right: solid 1px rgba(0, 0, 0, 0.08);
-    height: calc(100vh - 56px);
+    height: 100%;
+    position: sticky;
+    position: -webkit-sticky;
+    left: 0;
 }
 
 .sidebar-lead{
@@ -105,6 +115,7 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .hero{
+    width: 100vh;
     padding: 24px;
     background-color: #f6f9f6;
 }
@@ -114,8 +125,11 @@ a:link, a:visited, a:hover, a:active {
     line-height: 200%;
     font-weight: 200;
 }
-
+.main{
+    margin-left: 24px;
+}
 .content{ 
+    width: 100%;
     margin-left: 24px;
 }
 
