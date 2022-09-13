@@ -72,10 +72,10 @@ a:link, a:visited, a:hover, a:active {
     margin-top: 2px;
     background-color: white;
     border-right: solid 1px rgba(0, 0, 0, 0.08);
-    height: 100%;
+    height: 100vh;
     position: sticky;
     position: -webkit-sticky;
-    left: 0;
+    top: 0;
 }
 
 .sidebar-lead{
@@ -115,7 +115,6 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .hero{
-    width: 100vh;
     padding: 24px;
     background-color: #f6f9f6;
 }
