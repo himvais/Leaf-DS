@@ -147,6 +147,8 @@ $border-width: (
 
 $border-style: (solid, dashed, dotted, hidden, none);
 
+$border-direction: (top, right, bottom, left);
+
 //-------------------------------------------------------------------
 //elevation
 //-------------------------------------------------------------------
@@ -154,7 +156,7 @@ $elevation-size: (
     "100": 1px, 
     "200": 2px, 
     "300": 4px, 
-    "400": 8px
+    "400": 8px,
     "500": 16px 
 );
 

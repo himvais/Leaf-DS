@@ -1,260 +1,260 @@
-@use "sass:map";
-//Theme: A brand palette object, a collection of minimum required set of colours for creating a functional UI.
-$theme: (
-    "100":#f9fbfe,
-    "200":#d4dbe5,
-    "300":#D4DAE5,
-    "400":#1f4c82,
-    "500":#193d68,
-    "600":#060f1a,
-    "700":#050b14
-);
+// @use "sass:map";
+// //Theme: A brand palette object, a collection of minimum required set of colours for creating a functional UI.
+// $theme: (
+//     "100":#f9fbfe,
+//     "200":#d4dbe5,
+//     "300":#D4DAE5,
+//     "400":#1f4c82,
+//     "500":#193d68,
+//     "600":#060f1a,
+//     "700":#050b14
+// );
 
 
-$typography :(
-    "size":(
-        //"class suffix" : (font-size, line-height)
-        "100": (12px, 16px),
-        "200": (14px, 16px),
-        "300": (16px, 24px),
-        "400": (18px, 24px),
-        "500": (20px, 24px),
-        "600": (24px, 32px),
-        "700": (32px, 48px),
-        "800": (48px, 56px),
-        "900": (56px, 64px)
-    ),
-    "weight":(
-        "light":200, 
-        "normal":400,
-        "semibold":600, 
-        "bold":800   
-    ),
-    "align":(
-        left, right, center, justify   
-    ),
-    // "color":(
-    //     "primary": map.get(t.$theme, "700"),
-    //     "secondary": map.get(t.$theme, "600"),
-    //     "light": map.get(t.$theme, "100"),
-    //     "link": map.get(c.$blue, "500"),
-    //     "disabled": map.get(c.$grey, "500")
-    // )
-);
+// $typography :(
+//     "size":(
+//         //"class suffix" : (font-size, line-height)
+//         "100": (12px, 16px),
+//         "200": (14px, 16px),
+//         "300": (16px, 24px),
+//         "400": (18px, 24px),
+//         "500": (20px, 24px),
+//         "600": (24px, 32px),
+//         "700": (32px, 48px),
+//         "800": (48px, 56px),
+//         "900": (56px, 64px)
+//     ),
+//     "weight":(
+//         "light":200, 
+//         "normal":400,
+//         "semibold":600, 
+//         "bold":800   
+//     ),
+//     "align":(
+//         left, right, center, justify   
+//     ),
+//     // "color":(
+//     //     "primary": map.get(t.$theme, "700"),
+//     //     "secondary": map.get(t.$theme, "600"),
+//     //     "light": map.get(t.$theme, "100"),
+//     //     "link": map.get(c.$blue, "500"),
+//     //     "disabled": map.get(c.$grey, "500")
+//     // )
+// );
 
 
-$color-base :(
-    "green":(
-        "100": #EEF7F3, 
-        "200": #E4F7EF,
-        "300": #DAF7EA,
-        "400": #C6F7E1,
-        "500": #007A5F,
-        "600": #01634D,
-        "700": #014C3C,
-        "800": #02362A,
-        "900": #011F18,
-        "1000": #011410
-    ),
-    "yellow":(
-        "100": #F7F7ED, 
-        "200": #F7F6E4,
-        "300": #F7F6DA,
-        "400": #F7F5C6,
-        "500": #B1A800,
-        "600": #9C9401,
-        "700": #4C4901,
-        "800": #363302,
-        "900": #1F1D01,
-        "1000": #141301
-    ),
-    "orange":(
-        "100": #F7F4ED, 
-        "200": #F7F0E4,
-        "300": #F7EDDA,
-        "400": #F7E6C6,
-        "500": #D28700,
-        "600": #9C6502,
-        "700": #4C3201,
-        "800": #362302,
-        "900": #1F1401,
-        "1000": #140D01
-    ),
-    "red":(
-        "100": #F7EDF1, 
-        "200": #F7E4EA,
-        "300": #F7DAE4,
-        "400": #F7C6D7,
-        "500": #C40043,
-        "600": #9C0136,
-        "700": #4C011B,
-        "800": #360202,
-        "900": #1F0101,
-        "1000": #140101
-    ),
-    "blue":(
-        "100": #EDF4F7, 
-        "200": #E3F1F7,
-        "300": #D9EEF7,
-        "400": #C6E8F7,
-        "500": #008DD6,
-        "600": #01679C,
-        "700": #01334C,
-        "800": #022436,
-        "900": #01151F,
-        "1000": #010E14
-    ),
-    "slate":(
-        "100": #EDF1F7, 
-        "200": #E3EBF7,
-        "300": #D9E5F7,
-        "400": #C6D9F7,
-        "500": #6A83B2,
-        "600": #5D729C,
-        "700": #2E384C,
-        "800": #202736,
-        "900": #12161F,
-        "1000": #0C0F14
-    ),
-    "grey":(
-        "0": #FFFFFF,
-        "100": #FAFAFA, 
-        "200": #E7E5E4,
-        "300": #D2D1D0,
-        "400": #BEBDBC,
-        "500": #7F7F7D,
-        "600": #6B6B69,
-        "700": #525250,
-        "800": #383837,
-        "900": #1F1F1E,
-        "1000": #141414,
-        "1100": #000000
-    )
-);
+// $color-base :(
+//     "green":(
+//         "100": #EEF7F3, 
+//         "200": #E4F7EF,
+//         "300": #DAF7EA,
+//         "400": #C6F7E1,
+//         "500": #007A5F,
+//         "600": #01634D,
+//         "700": #014C3C,
+//         "800": #02362A,
+//         "900": #011F18,
+//         "1000": #011410
+//     ),
+//     "yellow":(
+//         "100": #F7F7ED, 
+//         "200": #F7F6E4,
+//         "300": #F7F6DA,
+//         "400": #F7F5C6,
+//         "500": #B1A800,
+//         "600": #9C9401,
+//         "700": #4C4901,
+//         "800": #363302,
+//         "900": #1F1D01,
+//         "1000": #141301
+//     ),
+//     "orange":(
+//         "100": #F7F4ED, 
+//         "200": #F7F0E4,
+//         "300": #F7EDDA,
+//         "400": #F7E6C6,
+//         "500": #D28700,
+//         "600": #9C6502,
+//         "700": #4C3201,
+//         "800": #362302,
+//         "900": #1F1401,
+//         "1000": #140D01
+//     ),
+//     "red":(
+//         "100": #F7EDF1, 
+//         "200": #F7E4EA,
+//         "300": #F7DAE4,
+//         "400": #F7C6D7,
+//         "500": #C40043,
+//         "600": #9C0136,
+//         "700": #4C011B,
+//         "800": #360202,
+//         "900": #1F0101,
+//         "1000": #140101
+//     ),
+//     "blue":(
+//         "100": #EDF4F7, 
+//         "200": #E3F1F7,
+//         "300": #D9EEF7,
+//         "400": #C6E8F7,
+//         "500": #008DD6,
+//         "600": #01679C,
+//         "700": #01334C,
+//         "800": #022436,
+//         "900": #01151F,
+//         "1000": #010E14
+//     ),
+//     "slate":(
+//         "100": #EDF1F7, 
+//         "200": #E3EBF7,
+//         "300": #D9E5F7,
+//         "400": #C6D9F7,
+//         "500": #6A83B2,
+//         "600": #5D729C,
+//         "700": #2E384C,
+//         "800": #202736,
+//         "900": #12161F,
+//         "1000": #0C0F14
+//     ),
+//     "grey":(
+//         "0": #FFFFFF,
+//         "100": #FAFAFA, 
+//         "200": #E7E5E4,
+//         "300": #D2D1D0,
+//         "400": #BEBDBC,
+//         "500": #7F7F7D,
+//         "600": #6B6B69,
+//         "700": #525250,
+//         "800": #383837,
+//         "900": #1F1F1E,
+//         "1000": #141414,
+//         "1100": #000000
+//     )
+// );
 
-$colors :(
+// $colors :(
 
-    "data-vis":(
-        "bg":(
-        "100": map.get($green, "400"),
-        "200": map.get($yellow, "400"),
-        "300": map.get($orange, "400"),
-        "400": map.get($red, "400"),
-        "500": map.get($blue, "400"),
-        "600": map.get($slate, "400"),
-        "700": map.get($grey, "400")
-    ),
-    "border":(
-        "100": map.get($green, "700"),
-        "200": map.get($yellow, "700"),
-        "300": map.get($orange, "700"),
-        "400": map.get($red, "700"),
-        "500": map.get($blue, "700"),
-        "600": map.get($slate, "700"),
-        "700": map.get($grey, "700")
-    )
-    ),
-    "status":(
-        "light":(
-        "success":map.get($green, "200"),
-        "warning": map.get($yellow, "200"),
-        "error": map.get($red, "200"),
-        "info": map.get($blue, "200")                                                                                       
-    ),
+//     "data-vis":(
+//         "bg":(
+//         "100": map.get($green, "400"),
+//         "200": map.get($yellow, "400"),
+//         "300": map.get($orange, "400"),
+//         "400": map.get($red, "400"),
+//         "500": map.get($blue, "400"),
+//         "600": map.get($slate, "400"),
+//         "700": map.get($grey, "400")
+//     ),
+//     "border":(
+//         "100": map.get($green, "700"),
+//         "200": map.get($yellow, "700"),
+//         "300": map.get($orange, "700"),
+//         "400": map.get($red, "700"),
+//         "500": map.get($blue, "700"),
+//         "600": map.get($slate, "700"),
+//         "700": map.get($grey, "700")
+//     )
+//     ),
+//     "status":(
+//         "light":(
+//         "success":map.get($green, "200"),
+//         "warning": map.get($yellow, "200"),
+//         "error": map.get($red, "200"),
+//         "info": map.get($blue, "200")                                                                                       
+//     ),
 
-    "dark":(
-        "success":map.get($green, "700"),
-        "warning": map.get($yellow, "700"),
-        "error": map.get($red, "700"),
-        "info": map.get($blue, "700")
-    )
-    ),
-    "semantic":(
+//     "dark":(
+//         "success":map.get($green, "700"),
+//         "warning": map.get($yellow, "700"),
+//         "error": map.get($red, "700"),
+//         "info": map.get($blue, "700")
+//     )
+//     ),
+//     "semantic":(
 
-        "light":(
-        "red": map.get($red, "300"),
-        "amber": map.get($orange, "300"),
-        "green": map.get($green, "300"),
-        "env": map.get($green, "300"),
-        "soc": map.get($orange, "300"),
-        "gov": map.get($slate, "300")
-    ),
+//         "light":(
+//         "red": map.get($red, "300"),
+//         "amber": map.get($orange, "300"),
+//         "green": map.get($green, "300"),
+//         "env": map.get($green, "300"),
+//         "soc": map.get($orange, "300"),
+//         "gov": map.get($slate, "300")
+//     ),
 
-    "dark":(
-        "red": map.get($red, "700"),
-        "amber": map.get($orange, "700"),
-        "green": map.get($green, "700"),
-        "env": map.get($green, "700"),
-        "soc": map.get($orange, "700"),
-        "gov": map.get($slate, "700")
-    )
-    )
-);
-
-
-$border :(
-    "radius":(
-        "small":2px, 
-        "medium":4px, 
-        "large":8px,
-        "round": 9999px
-    ),
-    "width":(
-        "100": 1px,
-        "200": 2px,
-        "300": 3px,
-        "400": 4px,
-        "500": 5px
-    ),
-    "color":(
-        "default": #DDDDDD, 
-        "dark": #333333,
-        "brand": map.get($theme, "400")
-    ),
-    "style":(
-        solid, dashed, dotted, hidden, none
-    )
-);
+//     "dark":(
+//         "red": map.get($red, "700"),
+//         "amber": map.get($orange, "700"),
+//         "green": map.get($green, "700"),
+//         "env": map.get($green, "700"),
+//         "soc": map.get($orange, "700"),
+//         "gov": map.get($slate, "700")
+//     )
+//     )
+// );
 
 
-$elevation:(
-    "size":(
-        "100": 2px, 
-        "200": 4px, 
-        "300": 8px, 
-        "400": 16px
-    ),
-    "direction":(
-        "left", "right", "top", "bottom", "default"
-    ),
-    "color":(
-        "default": rgba(0,0,0,0.2),
-        "brand": rgba(map.get($theme, "400"),0.35)
-    )
-);
+// $border :(
+//     "radius":(
+//         "small":2px, 
+//         "medium":4px, 
+//         "large":8px,
+//         "round": 9999px
+//     ),
+//     "width":(
+//         "100": 1px,
+//         "200": 2px,
+//         "300": 3px,
+//         "400": 4px,
+//         "500": 5px
+//     ),
+//     "color":(
+//         "default": #DDDDDD, 
+//         "dark": #333333,
+//         "brand": map.get($theme, "400")
+//     ),
+//     "style":(
+//         solid, dashed, dotted, hidden, none
+//     )
+// );
 
 
-$spacing: (
-    "type":(
-        "m": margin, 
-        "p": padding
-    ),
-    "space":(
-        "100": 4px, 
-        "200": 8px,
-        "300": 16px,
-        "400": 24px,
-        "500": 32px, 
-        "600": 48px, 
-        "700": 64px, 
-        "800": 88px, 
-        "900": 128px 
-    ),
-    "direction":(
-        "t": top, 
-        "b": bottom, 
-        "l": left, 
-        "r": right
-    )
-);
+// $elevation:(
+//     "size":(
+//         "100": 2px, 
+//         "200": 4px, 
+//         "300": 8px, 
+//         "400": 16px
+//     ),
+//     "direction":(
+//         "left", "right", "top", "bottom", "default"
+//     ),
+//     "color":(
+//         "default": rgba(0,0,0,0.2),
+//         "brand": rgba(map.get($theme, "400"),0.35)
+//     )
+// );
+
+
+// $spacing: (
+//     "type":(
+//         "m": margin, 
+//         "p": padding
+//     ),
+//     "space":(
+//         "100": 4px, 
+//         "200": 8px,
+//         "300": 16px,
+//         "400": 24px,
+//         "500": 32px, 
+//         "600": 48px, 
+//         "700": 64px, 
+//         "800": 88px, 
+//         "900": 128px 
+//     ),
+//     "direction":(
+//         "t": top, 
+//         "b": bottom, 
+//         "l": left, 
+//         "r": right
+//     )
+// );
 
