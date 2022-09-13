@@ -44,8 +44,8 @@ $directions: (
 @each $type-key, $type-value in $type{
     @each $size-key, $size-value in $space{
         .#{$type-key}x-#{$size-key}{
-            #{$type-value}-left: $size-key;
-            #{$type-value}-right: $size-key;
+            #{$type-value}-left: $size-value;
+            #{$type-value}-right: $size-value;
         }
     }
 }
@@ -54,8 +54,8 @@ $directions: (
 @each $type-key, $type-value in $type{
     @each $size-key, $size-value in $space{
         .#{$type-key}y-#{$size-key}{
-            #{$type-value}-top: $size-key;
-            #{$type-value}-bottom: $size-key;
+            #{$type-value}-top: $size-value;
+            #{$type-value}-bottom: $size-value;
         }
     }
 }

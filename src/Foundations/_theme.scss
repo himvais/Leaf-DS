@@ -33,13 +33,13 @@ $typography :(
     "align":(
         left, right, center, justify   
     ),
-    "color":(
-        "primary": map.get(t.$theme, "700"),
-        "secondary": map.get(t.$theme, "600"),
-        "light": map.get(t.$theme, "100"),
-        "link": map.get(c.$blue, "500"),
-        "disabled": map.get(c.$grey, "500")
-    )
+    // "color":(
+    //     "primary": map.get(t.$theme, "700"),
+    //     "secondary": map.get(t.$theme, "600"),
+    //     "light": map.get(t.$theme, "100"),
+    //     "link": map.get(c.$blue, "500"),
+    //     "disabled": map.get(c.$grey, "500")
+    // )
 );
 
 
