@@ -87,7 +87,7 @@ $color-base :(
         "1000": #0C0F14
     ),
     "grey":(
-        "0": #FFFFFF,
+        "000": #FFFFFF,
         "100": #FAFAFA, 
         "200": #E7E5E4,
         "300": #D2D1D0,
@@ -100,6 +100,23 @@ $color-base :(
         "1000": #141414,
         "1100": #000000
     )
+);
+
+$color-status :(
+    'success':map.get($color-base, "green", "700"),
+    'warning': map.get($color-base, "yellow", "700"),
+    'error': map.get($color-base, "red", "700"),
+    'info': map.get($color-base, "blue", "700"),
+    'action':map.get($color-base,"blue","500")
+);
+
+$color-semantics :(
+    'red': map.get($color-base,"red", "700"),
+    'amber': map.get($color-base,"orange", "700"),
+    'green': map.get($color-base,"green", "700"),
+    'env': map.get($color-base,"green", "700"),
+    'soc': map.get($color-base,"orange", "700"),
+    "gov": map.get($color-base,"slate", "700")
 );
 
 //-------------------------------------------------------------------

@@ -257,4 +257,42 @@
 //         "r": right
 //     )
 // );
+// @use "sass:map";
+// @use "variables" as v;
 
+//Data visualizations colour palette
+// $data-vis: (
+//     "bg":(
+//         'green': map.get(v.$color-base, "green", "400"),
+//         'yellow': map.get(v.$color-base, "yellow", "400"),
+//         'orange': map.get(v.$color-base, "orange", "400"),
+//         'red': map.get(v.$color-base, "red", "400"),
+//         'blue': map.get(v.$color-base, "blue", "400"),
+//         'slate': map.get(v.$color-base, "slate", "400"),
+//         'grey': map.get(v.$color-base, "grey", "400")
+//     ),
+//     "border":(
+//         'green': map.get(v.$color-base, "green", "700"),
+//         'yellow': map.get(v.$color-base, "yellow", "700"),
+//         'orange': map.get(v.$color-base, "orange", "700"),
+//         'red': map.get(v.$color-base, "red", "700"),
+//         'blue': map.get(v.$color-base, "blue", "700"),
+//         'slate': map.get(v.$color-base, "slate", "700"),
+//         'grey': map.get(v.$color-base, "grey", "700")
+//     )
+
+// );
+
+
+// //Colour palette generator function, an automated function to generate a colour palette based on a single input, optional to use. 
+// @function palette-generator($input-colour){
+//     $palette:(
+//         "100":scale-color($input-colour, $saturation: 0%, $lightness: 98%, $alpha: 100%),
+//         "200":scale-color($input-colour, $saturation: -60%, $lightness: 80%, $alpha: 100%),
+//         "300":scale-color($input-colour, $saturation: 0%, $lightness: 0%, $alpha: 100%),
+//         "400":scale-color($input-colour, $saturation: 0%, $lightness: -20%, $alpha: 100%),
+//         "500":scale-color($input-colour, $saturation: 0%, $lightness: -80%, $alpha: 100%),
+//         "600":scale-color($input-colour, $saturation: 0%, $lightness: -85%, $alpha: 100%)
+//     );
+//     @return $palette;
+// };
