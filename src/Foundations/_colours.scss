@@ -1,169 +1,86 @@
 @use "sass:map";
+@use "variables" as v;
 
-//ERM Colour Space: A collection of all the colours available for us
-$green: (
-    "1": #EEF7F3, 
-    "2": #E4F7EF,
-    "3": #DAF7EA,
-    "4": #C6F7E1,
-    "5": #007A5F,
-    "6": #01634D,
-    "7": #014C3C,
-    "8": #02362A,
-    "9": #011F18,
-    "10": #011410
-);
+.bg-transparent{
+    background-color: transparent;
+}
 
-$yellow: (
-    "1": #F7F7ED, 
-    "2": #F7F6E4,
-    "3": #F7F6DA,
-    "4": #F7F5C6,
-    "5": #B1A800,
-    "6": #9C9401,
-    "7": #4C4901,
-    "8": #363302,
-    "9": #1F1D01,
-    "10": #141301
-);
+.bg-white{
+    background-color: map.get(v.$color-base,"grey", "000");
+}
 
-$orange: (
-    "1": #F7F4ED, 
-    "2": #F7F0E4,
-    "3": #F7EDDA,
-    "4": #F7E6C6,
-    "5": #D28700,
-    "6": #9C6502,
-    "7": #4C3201,
-    "8": #362302,
-    "9": #1F1401,
-    "10": #140D01
-);
+.hover\:bg-white:hover{
+    background-color: #FFFFFF;
+}
 
-$red: (
-    "1": #F7EDF1, 
-    "2": #F7E4EA,
-    "3": #F7DAE4,
-    "4": #F7C6D7,
-    "5": #C40043,
-    "6": #9C0136,
-    "7": #4C011B,
-    "8": #360202,
-    "9": #1F0101,
-    "10": #140101
-);
+.bg-black{
+    background-color: map.get(v.$color-base,"grey", "1100");
+}
 
-$blue: (
-    "1": #EDF4F7, 
-    "2": #E3F1F7,
-    "3": #D9EEF7,
-    "4": #C6E8F7,
-    "5": #008DD6,
-    "6": #01679C,
-    "7": #01334C,
-    "8": #022436,
-    "9": #01151F,
-    "10": #010E14
-);
+.hover\:bg-black:hover{
+    background-color: map.get(v.$color-base,"grey", "1100");
+}
 
-$slate: (
-    "1": #EDF1F7, 
-    "2": #E3EBF7,
-    "3": #D9E5F7,
-    "4": #C6D9F7,
-    "5": #6A83B2,
-    "6": #5D729C,
-    "7": #2E384C,
-    "8": #202736,
-    "9": #12161F,
-    "10": #0C0F14
-);
+.bg-light-100{
+    background-color: map.get(v.$color-theme, "100");
+}
 
-$grey: (
-    "0": #FFFFFF,
-    "1": #FAFAFA, 
-    "2": #E7E5E4,
-    "3": #D2D1D0,
-    "4": #BEBDBC,
-    "5": #7F7F7D,
-    "6": #6B6B69,
-    "7": #525250,
-    "8": #383837,
-    "9": #1F1F1E,
-    "10": #141414,
-    "11": #000000
-);
+.hover\:bg-light-100:hover{
+    background-color: map.get(v.$color-theme, "100");
+}
 
-//Data visualizations colour palette
-$data-vis: (
-    "bg":(
-        '100': map.get($green, "4"),
-        '200': map.get($yellow, "4"),
-        '300': map.get($orange, "4"),
-        '400': map.get($red, "4"),
-        '500': map.get($blue, "4"),
-        '600': map.get($slate, "4"),
-        '700': map.get($grey, "4")
-    ),
-    "border":(
-        '100': map.get($green, "7"),
-        '200': map.get($yellow, "7"),
-        '300': map.get($orange, "7"),
-        '400': map.get($red, "7"),
-        '500': map.get($blue, "7"),
-        '600': map.get($slate, "7"),
-        '700': map.get($grey, "7")
-    )
+.bg-light-200{
+    background-color: map.get(v.$color-theme, "200");
+}
 
-);
+.hover\:bg-light-200:hover{
+    background-color: map.get(v.$color-theme, "200");
+}
 
-//Status colours
-$status: (
-    'light':(
-        'success':map.get($green, "2"),
-        'warning': map.get($yellow, "2"),
-        'error': map.get($red, "2"),
-        'info': map.get($blue, "2")                                                                                       
-    ),
+.bg-primary{
+    background-color: map.get(v.$color-theme, "500");
+}
 
-    "dark":(
-        'success':map.get($green, "7"),
-        'warning': map.get($yellow, "7"),
-        'error': map.get($red, "7"),
-        'info': map.get($blue, "7")
-    )
-    
-);
+.hover\:bg-primary:hover{
+    background-color: map.get(v.$color-theme, "500");
+}
 
-$semantics: (
-    'light':(
-        'red': map.get($red, "3"),
-        'amber': map.get($orange, "3"),
-        'green': map.get($green, "3"),
-        'env': map.get($green, "3"),
-        'soc': map.get($orange, "3"),
-        "gov": map.get($slate, "3")
-    ),
-    'dark':(
-        'red': map.get($red, "7"),
-        'amber': map.get($orange, "7"),
-        'green': map.get($green, "7"),
-        'env': map.get($green, "7"),
-        'soc': map.get($orange, "7"),
-        "gov": map.get($slate, "7")
-    )
-    
-);
+.bg-dark-100{
+    background-color: map.get(v.$color-theme, "600");
+}
 
-//Colour palette generator function, an automated function to generate a colour palette based on a single input, optional to use. 
-@function palette-generator($input-colour){
-    $palette:(
-        "100":scale-color($input-colour, $saturation: 0%, $lightness: 98%, $alpha: 100%),
-        "200":scale-color($input-colour, $saturation: -60%, $lightness: 80%, $alpha: 100%),
-        "300":scale-color($input-colour, $saturation: 0%, $lightness: 0%, $alpha: 100%),
-        "400":scale-color($input-colour, $saturation: 0%, $lightness: -20%, $alpha: 100%),
-        "500":scale-color($input-colour, $saturation: 0%, $lightness: -80%, $alpha: 100%),
-        "600":scale-color($input-colour, $saturation: 0%, $lightness: -85%, $alpha: 100%)
-    );
-    @return $palette;
-};
+.hover\:bg-dark-100:hover{
+    background-color: map.get(v.$color-theme, "600");
+}
+
+.bg-dark-200{
+    background-color: map.get(v.$color-theme, "700");
+}
+
+.hover\:bg-dark-200:hover{
+    background-color: map.get(v.$color-theme, "700");
+}
+
+.bg-success{
+    background-color: map.get(v.$color-status,"success");
+}
+
+.hover\:bg-success:hover{
+    background-color: map.get(v.$color-status,"success");
+}
+
+.bg-warning{
+    background-color: map.get(v.$color-status,"warning");
+}
+
+.hover\:bg-warning:hover{
+    background-color: map.get(v.$color-status,"warning");
+}
+
+.bg-error{
+    background-color: map.get(v.$color-status,"error");
+}
+
+.hover\:bg-error:hover{
+    background-color: map.get(v.$color-status,"error");
+}
