@@ -1,48 +1,25 @@
 @use "sass:map";
 @use "sass:list";
-
-$type : (
-    "m": margin, 
-    "p": padding
-);
-
-$space: (
-    "100": 4px, 
-    "200": 8px,
-    "300": 16px,
-    "400": 24px,
-    "500": 32px, 
-    "600": 48px, 
-    "700": 64px, 
-    "800": 88px, 
-    "900": 128px 
-);
-
-$directions: (
-    "t": top, 
-    "b": bottom, 
-    "l": left, 
-    "r": right
-);
+@use "variables" as v;
 
 
 //All sides margin classes
-@each $key, $value in $space{
+@each $key, $value in v.$space{
     .m-#{$key}{
         margin: $value;
     }
 }
 
 //All sides padding classes
-@each $key, $value in $space{
+@each $key, $value in v.$space{
     .p-#{$key}{
         padding: $value;
     }
 }
 
 //horizontal spacing
-@each $type-key, $type-value in $type{
-    @each $size-key, $size-value in $space{
+@each $type-key, $type-value in v.$spacing-type{
+    @each $size-key, $size-value in v.$spacing-size{
         .#{$type-key}x-#{$size-key}{
             #{$type-value}-left: $size-value;
             #{$type-value}-right: $size-value;
@@ -51,8 +28,8 @@ $directions: (
 }
 
 //verical spacing
-@each $type-key, $type-value in $type{
-    @each $size-key, $size-value in $space{
+@each $type-key, $type-value in v.$spacing-type{
+    @each $size-key, $size-value in v.$spacing-size{
         .#{$type-key}y-#{$size-key}{
             #{$type-value}-top: $size-value;
             #{$type-value}-bottom: $size-value;
@@ -60,9 +37,9 @@ $directions: (
     }
 }
 
-@each $type-key, $type-value in $type{
-    @each $size-key, $size-value in $space{
-        @each $dir-key, $dir-value in $directions{
+@each $type-key, $type-value in v.$spacing-type{
+    @each $size-key, $size-value in v.$spacing-size{
+        @each $dir-key, $dir-value in v.$spacing-directions{
             .#{$type-key}#{$dir-key}-#{$size-key}{
                 #{$type-value}-#{$dir-value}:#{$size-value}
             }
