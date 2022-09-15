@@ -84,3 +84,11 @@
 .hover\:bg-error:hover{
     background-color: map.get(v.$color-status,"error");
 }
+
+.bg-action{
+    background-color: map.get(v.$color-status,"action");
+}
+
+.hover\:bg-action:hover{
+    background-color: map.get(v.$color-status,"action");
+}
