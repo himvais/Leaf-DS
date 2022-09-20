@@ -205,3 +205,38 @@ $spacing-direction: (
     "l": left, 
     "r": right
 );
+
+//-------------------------------------------------------------------
+//layout
+//-------------------------------------------------------------------
+
+$layout-display:(
+    block, inline, inline-block, flex, inline-flex, grid, inline-grid, hidden
+);
+$layout-overflow: (
+    auto, hidden, scroll
+    );
+$layout-position: (
+    static, fixed, absolute, relative, sticky
+    );
+$layout-gird: (
+    columns, rows, span, gap
+    );
+$layout-flex: (
+    justify, align, place
+    );
+$layout-size: (
+    width, height, min-width, min-height, max-width, max-height
+    );
+
+$flex-flow: (
+        "start": flex-start, 
+        "end": flex-end, 
+        "center": center, 
+        "between": space-between, 
+        "around": space-around, 
+        "evenly": space-evenly
+    );
+    
+$layout-content: (start, end, center, stretch);
+    

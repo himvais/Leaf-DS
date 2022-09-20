@@ -1,24 +1,6 @@
 @use "sass:map";
 @use "sass:list";
-
-$display: (block, inline, inline-block, flex, inline-flex, grid, inline-grid, hidden);
-$overflow: (auto, hidden, scroll);
-$position: (static, fixed, absolute, relative, sticky);
-$gird: (columns, rows, span, gap);
-$flex: (justify, align, place);
-$size: (width, height, min-width, min-height, max-width, max-height);
-
-$flow: (
-    "start": flex-start, 
-    "end": flex-end, 
-    "center": center, 
-    "between": space-between, 
-    "around": space-around, 
-    "evenly": space-evenly
-);
-
-$content: (start, end, center, stretch);
-
+@use "variables" as v;
 
 @each $key in $display {
     .d-#{$key}{
@@ -43,42 +25,42 @@ $content: (start, end, center, stretch);
 }
 
 //Flow x 
-@each $key, $value in $flow{
+@each $key, $value in v.$flex-flow{
     .flow-x-#{$key}{
         justify-content: $value;
     }
 }
 
 //Flow y 
-@each $key, $value in $flow{
+@each $key, $value in v.$flex-flow{
     .flow-y-#{$key}{
         align-content: $value;
     }
 }
 
 //Flow xy 
-@each $key, $value in $flow{
+@each $key, $value in v.$flex-flow{
     .flow-xy-#{$key}{
         place-content: $value;
     }
 }
 
 //content x
-@each $key in $content{
+@each $key in v.$layout-content{
     .content-x-#{$key}{
         justify-items: $key;
     }
 }
 
 //content y
-@each $key in $content{
+@each $key in v.$layout-content{
     .content-y-#{$key}{
         align-items: $key;
     }
 }
 
 //content xy
-@each $key in $content{
+@each $key in v.$layout-content{
     .content-xy-#{$key}{
         place-items: $key;
     }
