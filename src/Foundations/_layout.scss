@@ -2,7 +2,7 @@
 @use "sass:list";
 @use "variables" as v;
 
-@each $key in $display {
+@each $key in v.$layout-display {
     .d-#{$key}{
         display:$key;
     }

@@ -4,14 +4,14 @@
 
 
 //All sides margin classes
-@each $key, $value in v.$space{
+@each $key, $value in v.$spacing-size{
     .m-#{$key}{
         margin: $value;
     }
 }
 
 //All sides padding classes
-@each $key, $value in v.$space{
+@each $key, $value in v.$spacing-size{
     .p-#{$key}{
         padding: $value;
     }
@@ -39,7 +39,7 @@
 
 @each $type-key, $type-value in v.$spacing-type{
     @each $size-key, $size-value in v.$spacing-size{
-        @each $dir-key, $dir-value in v.$spacing-directions{
+        @each $dir-key, $dir-value in v.$spacing-direction{
             .#{$type-key}#{$dir-key}-#{$size-key}{
                 #{$type-value}-#{$dir-value}:#{$size-value}
             }
