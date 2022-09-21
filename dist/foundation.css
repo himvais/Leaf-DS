@@ -307,6 +307,22 @@
   box-shadow: 0 0 calc(16px + (0.55 * 16px)) rgba(31, 76, 130, 0.35);
 }
 
+.z-index-100 {
+  z-index: 1;
+}
+
+.z-index-200 {
+  z-index: 2;
+}
+
+.z-index-300 {
+  z-index: 3;
+}
+
+.hover\:cursor-pointer:hover {
+  cursor: pointer;
+}
+
 .bg-transparent {
   background-color: transparent;
 }
@@ -1239,20 +1255,4 @@
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
-}
-
-.z-index-100 {
-  z-index: 1;
-}
-
-.z-index-200 {
-  z-index: 2;
-}
-
-.z-index-300 {
-  z-index: 3;
-}
-
-.hover\:cursor-pointer:hover {
-  cursor: pointer;
 }/*# sourceMappingURL=foundation.css.map */
