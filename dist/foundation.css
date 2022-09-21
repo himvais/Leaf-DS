@@ -14,6 +14,22 @@
   border-color: #D4DAE5;
 }
 
+.border-color-success {
+  border-color: #014C3C;
+}
+
+.border-color-warning {
+  border-color: #4C4901;
+}
+
+.border-color-error {
+  border-color: #4C011B;
+}
+
+.border-color-info {
+  border-color: #01334C;
+}
+
 .border-radius-small {
   border-radius: 2px;
 }
@@ -466,6 +482,23 @@
   text-align: justify;
 }
 
+.text-align-none {
+  text-decoration: none;
+}
+
+.text-align-underline {
+  text-decoration: underline;
+}
+
+.text-align-line-through {
+  text-decoration: line-through;
+}
+
+.text-align-italic {
+  -webkit-text-decoration: italic;
+          text-decoration: italic;
+}
+
 .text-color-primary {
   color: #050b14;
 }
@@ -486,11 +519,11 @@
   color: #7F7F7D;
 }
 
-.text-italic {
-  font-style: italic;
+.text-underline {
+  text-decoration: underline;
 }
 
-.text-underline {
+.hover\:underline:hover {
   text-decoration: underline;
 }
 
@@ -1206,4 +1239,20 @@
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+
+.z-index-100 {
+  z-index: 1;
+}
+
+.z-index-200 {
+  z-index: 2;
+}
+
+.z-index-300 {
+  z-index: 3;
+}
+
+.hover\:cursor-pointer:hover {
+  cursor: pointer;
 }/*# sourceMappingURL=foundation.css.map */

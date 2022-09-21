@@ -4,7 +4,11 @@
 $color: (
     "default": map.get(v.$color-base, "grey", "400"),
     "dark": map.get(v.$color-base, "grey", "700"),
-    "brand": map.get(v.$color-theme, "300")
+    "brand": map.get(v.$color-theme, "300"),
+    "success":map.get(v.$color-status,"success"),
+    "warning":map.get(v.$color-status,"warning"),
+    "error":map.get(v.$color-status,"error"),
+    "info":map.get(v.$color-status,"info"),
 );
 
 .border {

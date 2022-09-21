@@ -36,17 +36,24 @@ $colour: (
     }
 }
 
+@each $key in v.$text-decoration {
+    .text-align-#{$key}{
+        text-decoration: $key;
+    }
+}
+
 @each $key, $value in $colour {
     .text-color-#{$key}{
         color: $value;
     }
 }
 
-.text-italic {
-    font-style: italic;
-}
 
 .text-underline {
     text-decoration: underline;
 }
 
+
+.hover\:underline:hover{
+    text-decoration: underline;
+}
