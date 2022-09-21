@@ -1,12 +1,10 @@
 @use "sass:map";
 @use "border";
 @use "elevation";
-
-@use "colours" as c;
-@use "theme" as t;
-@use "typography.scss" as y;
-@use "elevation.scss" as e;
-@use "spacing" as s;
-@use "layout" as l;
-@use "motion" as m;
-@use "utilities" ;
+@use "utilities";
+@use "colours";
+@use "typography.scss";
+@use "elevation.scss";
+@use "spacing";
+@use "layout";
+@use "motion";
