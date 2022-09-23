@@ -8,7 +8,8 @@
 4. Added _reset.scss for resetting browser defaults and consistent experrience.   
 
 ## Minor changes
-1. Added directional borders support with default border colour. 
+1. Added directional borders support with default border colour.
+2. Changed the classnames for the text classes to more readable format. f 
 
 ## Bug-fixes
 1. Fixed the mx, px, mr and pr classes not working issue. 
