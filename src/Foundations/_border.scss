@@ -1,5 +1,5 @@
 @use "sass:map";
-@use "variables" as v;
+@use "../variables" as v;
 
 $color: (
     "default": map.get(v.$color-base, "grey", "400"),

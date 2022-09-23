@@ -1,5 +1,5 @@
 @use "sass:map";
-@use "variables" as v;
+@use "../variables" as v;
 
 @each $key, $value in v.$z-index {
     .z-index-#{$key}{

@@ -1,6 +1,6 @@
 @use "sass:map";
 @use "sass:list";
-@use "variables" as v;
+@use "../variables" as v;
 
 @each $key in v.$layout-display {
     .d-#{$key}{
