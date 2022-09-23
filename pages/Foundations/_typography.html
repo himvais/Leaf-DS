@@ -8,7 +8,7 @@
     <p>Typography API exposes an eloborated class system to create any typogrpahic system you want within the Leaf design system specifications.</p>
     <br>
     <h4>Text Sizing</h4>
-    <p>text-size-* family of classes can be used to assign font-size to any text element, it consist of following classes and their respective effects:</p>
+    <p>text-* family of classes can be used to assign font-size to any text element, it consist of following classes and their respective effects:</p>
     <table>
         <tr>
             <th>classname</th>
@@ -18,67 +18,70 @@
             <th>preview</th>
         </tr>
         <tr>
-            <td>.text-size-100</td>
+            <td>.text-xs</td>
             <td>12px</td>
             <td>14px</td>
             <td>Super small text, footnotes, pill text, advised to used witd large font weights.</th>
-            <td><p class="text-size-100">sample</p></td>
+            <td><p class="text-xs">sample</p></td>
         </tr>
         <tr>
-            <td>.text-size-200</td>
+            <td>.text-sm</td>
             <td>14px</td>
             <td>16px</td>
             <td>Small text, subtext, not optimum for longer reading experience, good for short messages.</th>
-            <td><p class="text-size-200">sample</p></td>
+            <td><p class="text-sm">sample</p></td>
         </tr>
         <tr>
-            <td>.text-size-300</td>
+            <td>.text-md</td>
             <td>16px</td>
             <td>24px</td>
             <td>Default paragraph text size</th>
-            <td><p class="text-size-300">sample</p></td>
+            <td><p class="text-md">sample</p></td>
         </tr>
         <tr>
-            <td>.text-size-400</td>
+            <td>.text-lg</td>
             <td>18px</td>
             <td>24px</td>
             <td>Large paragraph text, stronger paragraphs, best for explaining or high empesis texts.</th>
-            <td><p class="text-size-400">sample</p></td>
+            <td><p class="text-lg">sample</p></td>
         </tr>
         <tr>
-            <td>.text-size-500</td>
+            <td>.text-h5</td>
             <td>20px</td>
             <td>24px</td>
             <td>Smallest headings or h4 size headings, great for section labels or low level headings.</th>
-            <td><p class="text-size-500">sample</p></td>
+            <td><p class="text-h5">sample</p></td>
         </tr>
         <tr>
-            <td>.text-size-600</td>
+            <td>.text-h4</td>
             <td>24px</td>
             <td>32px</td>
             <td>H3 level headings, page headings, strong leading headings</th>
-            <td><p class="text-size-600">sample</p></td>
+            <td><p class="text-h4">sample</p></td>
         </tr>
         <tr>
-            <td>.text-size-700</td>
+            <td>.text-h3</td>
             <td>32px</td>
             <td>48px</td>
             <td>H2 level headings, generally used as largest font-size in SaaS products.</th>
-            <td><p class="text-size-700">sample</p></td>
+            <td><p class="text-h3">sample</p></td>
         </tr>
         <tr>
-            <td>.text-size-800</td>
+            <td>.text-h2</td>
             <td>48px</td>
             <td>56px</td>
             <td>H1 level headings, use sparcely in the UI, mostly for largest size text headings.</th>
-            <td><p class="text-size-800">sample</p></td>
+            <td><p class="text-h2">sample</p></td>
         </tr>
         <tr>
-            <td>.text-size-900</td>
+            <td>.text-h1</td>
             <td>56px</td>
             <td>64px</td>
             <td>Hero text, strictly to be used in marketing sites or super large text styles.</th>
-            <td><p class="text-size-900">sample</p></td>
+            <td><p class="text-h1">sample</p></td>
+        </tr>
+        <tr>
+            <th colspan="5">Use class "hover:underline" to add underline interaction on hover</th>
         </tr>
     </table>
 
@@ -182,7 +185,7 @@
         </tr>
     </table>
 
-    <h4>Text Utilities</h4>
+    <h4>Text Decoration</h4>
     <p>A collection of text classes to provide a range of additional effects</p>
     <table>
         <tr>
@@ -191,14 +194,24 @@
             <th>Sample</th>
         </tr>
         <tr>
-            <td>.text-italic</td>
-            <td>Apply italic decoration on text</td>
-            <td><p class="text-italic">Sample</p></td>
+            <td>.text-decoration-none</td>
+            <td>Apply no decoration on text</td>
+            <td><p class="text-decoration-none">Sample</p></td>
         </tr>
         <tr>
-            <td>.text-underline</td>
+            <td>.text-decoration-underline</td>
             <td>Apply underline decoration on text</td>
-            <td><p class="text-underline">Sample</p></td>
+            <td><p class="text-decoration-underline">Sample</p></td>
+        </tr>
+        <tr>
+            <td>.text-decoration-line-through</td>
+            <td>Apply line-through decoration on text</td>
+            <td><p class="text-decoration-line-through">Sample</p></td>
+        </tr>
+        <tr>
+            <td>.text-decoration-italic</td>
+            <td>Apply italic decoration on text</td>
+            <td><p class="text-decoration-italic">Sample</p></td>
         </tr>
     </table>
 </div>

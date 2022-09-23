@@ -3,7 +3,7 @@
     <p class="lead">Layout system in leaf-foundation allows you to create various layouts using CSS grids and Flex.</p>
     <span><strong>_layout.scss</strong></span>
 </div>
-<div class="content" style="width:80%;">
+<div class="content" >
     <h3>Display API</h3>
     <p>Display classes follow .d-* syntax, The following classes can be used for changing the css display property of any element.</p>
     <br>
@@ -14,37 +14,66 @@
         </tr>
         <tr>
             <td>.d-block</td>
-            <td>display:block</td>
+            <td><p>display:block</p></td>
         </tr>
         <tr>
             <td>.d-inline</td>
-            <td>display:inline</td>
+            <td><p>display:inline</p></td>
         </tr>
         <tr>
             <td>.d-inline-block</td>
-            <td>display:inline-block</td>
+            <td><p>display:inline-block</p></td>
         </tr>
         <tr>
             <td>.d-flex</td>
-            <td>display:flex</td>
+            <td><p>display:flex</p></td>
         </tr>
         <tr>
             <td>.d-inline-flex</td>
-            <td>display:inline-flex</td>
+            <td><p>display:inline-flex</p></td>
         </tr>
         <tr>
             <td>.d-grid</td>
-            <td>display:grid</td>
+            <td><p>display:grid</p></td>
         </tr>
         <tr>
             <td>.d-inline-grid</td>
-            <td>display:inline-grid</td>
+            <td><p>display:inline-grid</p></td>
         </tr>
         <tr>
             <td>.d-hidden</td>
-            <td>display:hidden</td>
+            <td><p>display:hidden</p></td>
         </tr>
     </table>
+    <br>
+
+    <h3>Flex classes</h3>
+    <p>Flex classes follow .f-* syntax, The following classes can be used for changing the flex property of any element.</p>
+    <br>
+    <table>
+        <tr>
+            <th>class</th>
+            <th>property</th>
+        </tr>
+        <tr>
+            <td>.f-row</td>
+            <td><p>flex-direction:row</p></td>
+        </tr>
+        <tr>
+            <td>.f-row-reverse</td>
+            <td><p>flex-direction: row-reverse</p></td>
+        </tr>
+        <tr>
+            <td>.f-col</td>
+            <td><p>flex-direction: column</p></td>
+        </tr>
+        <tr>
+            <td>.f-col-reverse</td>
+            <td><p>flex-direction: column-reverse</p></td>
+        </tr>
+    </table>
+
+
     <br>
     <h3>Flow API</h3>
     <p>The Flow API allows controlling how the content will flow inside a parent grid or flex container. It works with both grid and flex based layouts.</p>
@@ -57,37 +86,37 @@
             <th>CSS</th>
         </tr>
         <tr>
-            <td>.flow-x-start</td>
-            <td>horizontally, left to right</td>
-            <td>justify-content: flex-start</td>
+            <td>.flow-primary-start</td>
+            <td>left to right or top to bottom based on primary axis</td>
+            <td><p>justify-content: flex-start</p></td>
         </tr>
         <tr>
-            <td>.flow-x-end</td>
-            <td>horzontally, right to left</td>
-            <td>justify-content: flex-end</td>
+            <td>.flow-primary-end</td>
+            <td>right to left or bottom to top based on primary axis</td>
+            <td><p>justify-content: flex-end</p></td>
         </tr>
         <tr>
-            <td>.flow-x-center</td>
-            <td>horizontally, aligned in center</td>
-            <td>justify-content: center</td>
+            <td>.flow-primary-center</td>
+            <td>aligned in center horizontally or vertically based on primary axis </td>
+            <td><p>justify-content: center</p></td>
         </tr>
         <tr>
-            <td>.flow-x-between</td>
-            <td>horizontally, the space between content splits evenly</td>
-            <td>justify-content: space-between</td>
+            <td>.flow-primary-between</td>
+            <td>the space between content splits evenly</td>
+            <td><p>justify-content: space-between</p></td>
         </tr>
         <tr>
-            <td>.flow-x-around</td>
-            <td>horizontally, the space around content is distributed evently</td>
-            <td>justify-content: space-around</td>
+            <td>.flow-primary-around</td>
+            <td>the space around content is distributed evently</td>
+            <td><p>justify-content: space-around</p></td>
         </tr>
         <tr>
-            <td>.flow-x-evenly</td>
-            <td>horizontally, the content is spread evenly in container</td>
-            <td>justify-content: space-evenly</td>
+            <td>.flow-primary-evenly</td>
+            <td>the content is spread evenly in container</td>
+            <td><p>justify-content: space-evenly</p></td>
         </tr>
         <tr>
-            <th colspan="3">Replace x with "y" for vertical and "xy" for both vertical and horizontal results.</th>
+            <th colspan="3">Replace primary with "secondary" for setting flow of secondary axis and "xy" for both vertical and horizontal results.</th>
         </tr>
     </table>
     <br>
@@ -101,27 +130,27 @@
             <th>CSS</th>
         </tr>
         <tr>
-            <td>.content-x-start</td>
-            <td>Items are placed left to right</td>
-            <td>justify-items: start</td>
+            <td>.content-primary-start</td>
+            <td>left to right or top to bottom based on flex direction</td>
+            <td><p>justify-items: start</p></td>
         </tr>
         <tr>
-            <td>.content-x-end</td>
-            <td>Items are placed right to left</td>
-            <td>justify-items: end</td>
+            <td>.content-primary-end</td>
+            <td>right to left or bottom to top based on flex direction</td>
+            <td><p>justify-items: end</p></td>
         </tr>
         <tr>
-            <td>.content-x-center</td>
+            <td>.content-primary-center</td>
             <td>Items are placed at the center of parent</td>
-            <td>justify-items: center</td>
+            <td><p>justify-items: center</p></td>
         </tr>
         <tr>
-            <td>.content-x-stretch</td>
+            <td>.content-primary-stretch</td>
             <td>Items are streched to occupy full width of parent</td>
-            <td>Justify-items: stretch</td>
+            <td><p>Justify-items: stretch</p></td>
         </tr>
         <tr>
-            <th colspan="3">Replace x with "y" for vertical and "xy" for both vertical & horizontal results.</th>
+            <th colspan="3">Replace primary with "secondary" for setting flow of secondary axis and "xy" for both vertical & horizontal results.</th>
         </tr>
     </table>
     <br><br>

@@ -1,0 +1,13 @@
+@use "sass:map";
+@use "../variables" as v;
+
+@each $key, $value in v.$z-index {
+    .z-index-#{$key}{
+        z-index: $value;
+    }
+};
+
+
+.hover\:cursor-pointer:hover{
+    cursor: pointer;
+}

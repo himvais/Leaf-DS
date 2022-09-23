@@ -1,41 +1,19 @@
 @use "sass:map";
-@use "theme" as t;
-
-$radius: (
-    "small":2px, 
-    "medium":4px, 
-    "large":8px,
-    "round": 9999px
-);
-
-$width: (
-    "100": 1px,
-    "200": 2px,
-    "300": 3px,
-    "400": 4px,
-    "500": 5px
-);
+@use "../variables" as v;
 
 $color: (
-    "default": #DDDDDD, 
-    "dark": #333333,
-    "brand": map.get(t.$theme, "400")
+    "default": map.get(v.$color-base, "grey", "400"),
+    "dark": map.get(v.$color-base, "grey", "700"),
+    "brand": map.get(v.$color-theme, "300"),
+    "success":map.get(v.$color-status,"success"),
+    "warning":map.get(v.$color-status,"warning"),
+    "error":map.get(v.$color-status,"error"),
+    "info":map.get(v.$color-status,"info"),
 );
 
-$style : (solid, dashed, dotted, hidden, none);
-
-@each $key, $value in $radius {
-    .border-radius-#{$key}{
-        border-radius: $value;
-    }
-};
-
-@each $key, $value in $width {
-    .border-#{$key}{
-        border-width: $value;
-        border-style: solid;
-    }
-};
+.border {
+    border: 1px solid map.get($color, "default");
+}
 
 @each $key, $value in $color {
     .border-color-#{$key}{
@@ -43,13 +21,32 @@ $style : (solid, dashed, dotted, hidden, none);
     }
 };
 
-@each $key in $style {
+
+@each $key, $value in v.$border-radius {
+    .border-radius-#{$key}{
+        border-radius: $value;
+    }
+};
+
+@each $key, $value in v.$border-width {
+    .border-#{$key}{
+        border-width: $value;
+        border-style: solid;
+    }
+};
+
+
+@each $key in v.$border-style {
     .border-style-#{$key}{
         border-style: $key;
     }
 };
 
-.border {
-    border: 1px solid map.get($color, "default");
+@each $key in v.$border-direction {
+    .border-#{$key} {
+        border-#{$key}: 1px solid map.get($color, "default");
+    }
 }
+
+
 
