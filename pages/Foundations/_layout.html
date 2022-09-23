@@ -46,6 +46,35 @@
         </tr>
     </table>
     <br>
+
+    <h3>Flex classes</h3>
+    <p>Flex classes follow .f-* syntax, The following classes can be used for changing the flex property of any element.</p>
+    <br>
+    <table>
+        <tr>
+            <th>class</th>
+            <th>property</th>
+        </tr>
+        <tr>
+            <td>.f-row</td>
+            <td>flex-direction:row</td>
+        </tr>
+        <tr>
+            <td>.f-row-reverse</td>
+            <td>flex-direction: row-reverse</td>
+        </tr>
+        <tr>
+            <td>.f-col</td>
+            <td>flex-direction: column</td>
+        </tr>
+        <tr>
+            <td>.f-col-reverse</td>
+            <td>flex-direction: column-reverse</td>
+        </tr>
+    </table>
+
+
+    <br>
     <h3>Flow API</h3>
     <p>The Flow API allows controlling how the content will flow inside a parent grid or flex container. It works with both grid and flex based layouts.</p>
     <p>Class formula: <strong>.flow-[x|y|xy]-[start|end|center|between|around|evenly]</p></strong>
@@ -57,37 +86,37 @@
             <th>CSS</th>
         </tr>
         <tr>
-            <td>.flow-x-start</td>
-            <td>horizontally, left to right</td>
+            <td>.flow-primary-start</td>
+            <td> left to right or top to bottom based on primary axis</td>
             <td>justify-content: flex-start</td>
         </tr>
         <tr>
-            <td>.flow-x-end</td>
-            <td>horzontally, right to left</td>
+            <td>.flow-primary-end</td>
+            <td>right to left or bottom to top based on primary axis</td>
             <td>justify-content: flex-end</td>
         </tr>
         <tr>
-            <td>.flow-x-center</td>
-            <td>horizontally, aligned in center</td>
+            <td>.flow-primary-center</td>
+            <td>aligned in center horizontally or vertically based on primary axis </td>
             <td>justify-content: center</td>
         </tr>
         <tr>
-            <td>.flow-x-between</td>
-            <td>horizontally, the space between content splits evenly</td>
+            <td>.flow-primary-between</td>
+            <td>the space between content splits evenly</td>
             <td>justify-content: space-between</td>
         </tr>
         <tr>
-            <td>.flow-x-around</td>
-            <td>horizontally, the space around content is distributed evently</td>
+            <td>.flow-primary-around</td>
+            <td>the space around content is distributed evently</td>
             <td>justify-content: space-around</td>
         </tr>
         <tr>
-            <td>.flow-x-evenly</td>
-            <td>horizontally, the content is spread evenly in container</td>
+            <td>.flow-primary-evenly</td>
+            <td>the content is spread evenly in container</td>
             <td>justify-content: space-evenly</td>
         </tr>
         <tr>
-            <th colspan="3">Replace x with "y" for vertical and "xy" for both vertical and horizontal results.</th>
+            <th colspan="3">Replace primary with "secondary" for setting flow of secondary axis and "xy" for both vertical and horizontal results.</th>
         </tr>
     </table>
     <br>
@@ -101,27 +130,27 @@
             <th>CSS</th>
         </tr>
         <tr>
-            <td>.content-x-start</td>
-            <td>Items are placed left to right</td>
+            <td>.content-primary-start</td>
+            <td>left to right or top to bottom based on flex direction</td>
             <td>justify-items: start</td>
         </tr>
         <tr>
-            <td>.content-x-end</td>
-            <td>Items are placed right to left</td>
+            <td>.content-primary-end</td>
+            <td>right to left or bottom to top based on flex direction</td>
             <td>justify-items: end</td>
         </tr>
         <tr>
-            <td>.content-x-center</td>
+            <td>.content-primary-center</td>
             <td>Items are placed at the center of parent</td>
             <td>justify-items: center</td>
         </tr>
         <tr>
-            <td>.content-x-stretch</td>
+            <td>.content-primary-stretch</td>
             <td>Items are streched to occupy full width of parent</td>
             <td>Justify-items: stretch</td>
         </tr>
         <tr>
-            <th colspan="3">Replace x with "y" for vertical and "xy" for both vertical & horizontal results.</th>
+            <th colspan="3">Replace primary with "secondary" for setting flow of secondary axis and "xy" for both vertical & horizontal results.</th>
         </tr>
     </table>
     <br><br>
