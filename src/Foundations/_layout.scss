@@ -24,16 +24,16 @@
     flex-direction: column-reverse;
 }
 
-//Flow x 
+//Flow primary
 @each $key, $value in v.$flex-flow{
-    .flow-x-#{$key}{
+    .flow-primary-#{$key}{
         justify-content: $value;
     }
 }
 
-//Flow y 
+//Flow secondary 
 @each $key, $value in v.$flex-flow{
-    .flow-y-#{$key}{
+    .flow-secondary-#{$key}{
         align-content: $value;
     }
 }
@@ -45,16 +45,16 @@
     }
 }
 
-//content x
+//content primary
 @each $key in v.$layout-content{
-    .content-x-#{$key}{
+    .content-primary-#{$key}{
         justify-items: $key;
     }
 }
 
-//content y
+//content secondary
 @each $key in v.$layout-content{
-    .content-y-#{$key}{
+    .content-secondary-#{$key}{
         align-items: $key;
     }
 }
