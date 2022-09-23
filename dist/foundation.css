@@ -421,47 +421,47 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.text-size-100 {
+.text-xs {
   font-size: 12px;
   line-height: 16px;
 }
 
-.text-size-200 {
+.text-s {
   font-size: 14px;
   line-height: 16px;
 }
 
-.text-size-300 {
+.text-m {
   font-size: 16px;
   line-height: 24px;
 }
 
-.text-size-400 {
+.text-l {
   font-size: 18px;
   line-height: 24px;
 }
 
-.text-size-500 {
+.text-h5 {
   font-size: 20px;
   line-height: 24px;
 }
 
-.text-size-600 {
+.text-h4 {
   font-size: 24px;
   line-height: 32px;
 }
 
-.text-size-700 {
+.text-h3 {
   font-size: 32px;
   line-height: 48px;
 }
 
-.text-size-800 {
+.text-h2 {
   font-size: 48px;
   line-height: 56px;
 }
 
-.text-size-900 {
+.text-h1 {
   font-size: 56px;
   line-height: 64px;
 }
@@ -498,21 +498,16 @@
   text-align: justify;
 }
 
-.text-align-none {
+.text-decoration-none {
   text-decoration: none;
 }
 
-.text-align-underline {
+.text-decoration-underline {
   text-decoration: underline;
 }
 
-.text-align-line-through {
+.text-decoration-line-through {
   text-decoration: line-through;
-}
-
-.text-align-italic {
-  -webkit-text-decoration: italic;
-          text-decoration: italic;
 }
 
 .text-color-primary {
@@ -535,8 +530,8 @@
   color: #7F7F7D;
 }
 
-.text-underline {
-  text-decoration: underline;
+.text-decoration-italic {
+  font-style: italic;
 }
 
 .hover\:underline:hover {

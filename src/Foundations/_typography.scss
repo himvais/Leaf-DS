@@ -18,7 +18,7 @@ $colour: (
 }
 
 @each $key, $value in v.$text-size {
-    .text-size-#{$key}{
+    .text-#{$key}{
         font-size: list.nth($value, 1);
         line-height: list.nth($value, 2);
     }
@@ -37,7 +37,7 @@ $colour: (
 }
 
 @each $key in v.$text-decoration {
-    .text-align-#{$key}{
+    .text-decoration-#{$key}{
         text-decoration: $key;
     }
 }
@@ -49,8 +49,8 @@ $colour: (
 }
 
 
-.text-underline {
-    text-decoration: underline;
+.text-decoration-italic {
+    font-style: italic;
 }
 
 
