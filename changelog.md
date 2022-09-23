@@ -1,5 +1,6 @@
 # v0.1.2
 ## Major Changes
+1. System: added components.scss file and _layouts.scss
 ## Minor Changes
 ## Bug-Fixex
 
