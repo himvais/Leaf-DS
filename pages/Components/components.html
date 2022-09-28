@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/dist/foundation.css">
     <title>Leaf Design System</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
@@ -12,18 +13,17 @@
     <span id="source" style="display:none;">#navlink-components</span>
     <div id="navigation"></div>
     <div class="container">
-        <div class="sidebar">
+        <div class="sidebar sticky">
             <div class="sidebar-lead">
-                COMPONENTS
+                <a href="#" id="base">COMPONENTS</a>
             </div>
             <ul class="sidebar-menu">
-                <a href="#"><li class="sidebar-item">Buttons</li></a>
+                <a href="#"><li class="sidebar-item" id="button">Buttons</li></a>
             </ul>
         </div>
-        <div class="main">
-            <h1>Content Area</h1>
-        </div>
+        <div class="main" id="content"></div>
     </div>
     <script src="/js/index.js"></script>
+    <script src="/js/components.js"></script>
 </body>
 </html>
