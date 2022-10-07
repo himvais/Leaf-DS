@@ -6,8 +6,8 @@
 .btn{
     padding-left: map.get(v.$spacing-size,"300");
     padding-right: map.get(v.$spacing-size,"300");
-    padding-top: map.get(v.$spacing-size,"200");
-    padding-bottom: map.get(v.$spacing-size,"200");
+    padding-top: map.get(v.$spacing-size,"100");
+    padding-bottom: map.get(v.$spacing-size,"100");
     $text:map.get(v.$text-size,"md");
     font-size:list.nth($text,1);
     line-height:list.nth($text,2);
@@ -15,48 +15,15 @@
     border-radius: map.get(v.$border-radius,"md");
 }
 
-.btn-sm{
-    padding-left: map.get(v.$spacing-size,"200");
-    padding-right: map.get(v.$spacing-size,"200");
-    padding-top: map.get(v.$spacing-size,"100");
-    padding-bottom: map.get(v.$spacing-size,"100");
-    $text:map.get(v.$text-size,"sm");
-    font-size:list.nth($text,1);
-    line-height:list.nth($text,2);
-    border-radius: map.get(v.$border-radius,"sm");
-}
-
-.btn-md{
-    padding-left: map.get(v.$spacing-size,"300");
-    padding-right: map.get(v.$spacing-size,"300");
-    padding-top: map.get(v.$spacing-size,"200");
-    padding-bottom: map.get(v.$spacing-size,"200");
-    $text:map.get(v.$text-size,"md");
-    font-size:list.nth($text,1);
-    line-height:list.nth($text,2);
-    border-radius: map.get(v.$border-radius,"md");
-}
-
-.btn-lg{
-    padding-left: map.get(v.$spacing-size,"400");
-    padding-right: map.get(v.$spacing-size,"400");
-    padding-top: map.get(v.$spacing-size,"300");
-    padding-bottom: map.get(v.$spacing-size,"300");
-    $text:map.get(v.$text-size,"lg");
-    font-size:list.nth($text,1);
-    line-height:list.nth($text,2);
-    border-radius: map.get(v.$border-radius,"lg");
-}
-
 .btn-primary{
     background-color: map.get(v.$color-theme,"400");
-    border: 1px solid map.get(v.$color-theme,"600");
+    border: none;
     color: map.get(v.$color-base,"grey","000");
 }
 
 .btn-primary:hover{
     background-color: map.get(v.$color-theme,"500");
-    border: 1px solid map.get(v.$color-theme,"700");
+    border: none;
     cursor: pointer;
 }
 
@@ -73,4 +40,37 @@
     cursor: pointer;
 }
 
+
+// .btn-sm{
+//     padding-left: map.get(v.$spacing-size,"200");
+//     padding-right: map.get(v.$spacing-size,"200");
+//     padding-top: map.get(v.$spacing-size,"100");
+//     padding-bottom: map.get(v.$spacing-size,"100");
+//     $text:map.get(v.$text-size,"sm");
+//     font-size:list.nth($text,1);
+//     line-height:list.nth($text,2);
+//     border-radius: map.get(v.$border-radius,"sm");
+// }
+
+// .btn-md{
+//     padding-left: map.get(v.$spacing-size,"300");
+//     padding-right: map.get(v.$spacing-size,"300");
+//     padding-top: map.get(v.$spacing-size,"200");
+//     padding-bottom: map.get(v.$spacing-size,"200");
+//     $text:map.get(v.$text-size,"md");
+//     font-size:list.nth($text,1);
+//     line-height:list.nth($text,2);
+//     border-radius: map.get(v.$border-radius,"md");
+// }
+
+// .btn-lg{
+//     padding-left: map.get(v.$spacing-size,"400");
+//     padding-right: map.get(v.$spacing-size,"400");
+//     padding-top: map.get(v.$spacing-size,"300");
+//     padding-bottom: map.get(v.$spacing-size,"300");
+//     $text:map.get(v.$text-size,"lg");
+//     font-size:list.nth($text,1);
+//     line-height:list.nth($text,2);
+//     border-radius: map.get(v.$border-radius,"lg");
+// }
 
