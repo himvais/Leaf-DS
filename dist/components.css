@@ -7,6 +7,8 @@
   line-height: 24px;
   font-weight: 400;
   border-radius: 4px;
+  box-sizing: border-box;
+  height: 32px;
 }
 
 .btn-primary {
@@ -21,12 +23,20 @@
   cursor: pointer;
 }
 
+.btn-primary:active {
+  background-color: #060f1a;
+}
+
+.btn-disabled {
+  background-color: #D2D1D0;
+  color: #7F7F7D;
+  border: 1px solid #7F7F7D;
+}
+
 .btn-secondary {
-  box-sizing: border-box;
   background-color: #FFFFFF;
   border: 1px solid #1f4c82;
   color: #193d68;
-  height: 32px;
 }
 
 .btn-secondary:hover {
@@ -34,4 +44,24 @@
   border: 1px solid #050b14;
   color: #060f1a;
   cursor: pointer;
+}
+
+.btn-secondary:active {
+  background-color: #D4DAE5;
+  border: 1px solid;
+}
+
+.btn-danger {
+  background-color: #C40043;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-danger:hover {
+  background-color: #9C0136;
+}
+
+.btn-danger:active {
+  background-color: #4C011B;
 }/*# sourceMappingURL=components.css.map */
