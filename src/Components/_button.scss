@@ -28,9 +28,11 @@
 }
 
 .btn-secondary{
+    box-sizing: border-box;
     background-color: map.get(v.$color-base,"grey","000");
     border: 1px solid map.get(v.$color-theme,"400");
     color: map.get(v.$color-theme,"500");
+    height: 32px;
 }
 
 .btn-secondary:hover{

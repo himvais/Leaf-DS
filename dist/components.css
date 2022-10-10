@@ -22,9 +22,11 @@
 }
 
 .btn-secondary {
+  box-sizing: border-box;
   background-color: #FFFFFF;
   border: 1px solid #1f4c82;
   color: #193d68;
+  height: 32px;
 }
 
 .btn-secondary:hover {
