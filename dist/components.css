@@ -24,7 +24,7 @@
 }
 
 .btn-primary:active {
-  background-color: #060f1a;
+  background-color: #0f253f;
 }
 
 .btn-disabled {
@@ -47,7 +47,7 @@
 }
 
 .btn-secondary:active {
-  background-color: #D4DAE5;
+  background-color: #b4c0d2;
   border: 1px solid;
 }
 
@@ -63,5 +63,5 @@
 }
 
 .btn-danger:active {
-  background-color: #4C011B;
+  background-color: #690124;
 }/*# sourceMappingURL=components.css.map */

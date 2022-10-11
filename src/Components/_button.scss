@@ -29,7 +29,7 @@
     cursor: pointer;
 }
 .btn-primary:active{
-    background-color: map.get(v.$color-theme,"600");
+    background-color: darken(map.get(v.$color-theme,"500"),10%);
 }
 
 .btn-disabled{
@@ -52,7 +52,7 @@
 }
 
 .btn-secondary:active{
-    background-color: map.get(v.$color-theme,"300");
+    background-color: darken(map.get(v.$color-theme,"200"),10%);
     border: 1px solid map.get(v.$color-theme,"800");
 }
 
@@ -67,7 +67,7 @@
     background-color: map.get(v.$color-base,"red","600");
 }
 .btn-danger:active{
-    background-color: map.get(v.$color-base,"red","700");
+    background-color: darken(map.get(v.$color-base,"red","600"),10%);
 }
 
 // .btn-sm{
