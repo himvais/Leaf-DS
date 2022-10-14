@@ -2,7 +2,16 @@
 @use "sass:list";
 @use "../variables" as v;
 //button color, padding, icon, font size,font color
-
+@function heightAdjust($pl, $pr, $pt, $pb){ //x,y
+    $npl:calc($pl - 1px);
+    $npr:calc($pr - 1px);
+    $npt:calc($pt - 1px);
+    $npb:calc($pb - 1px);
+    $paddingCalc:(
+      $npl, $npr, $npt,$npb      
+    );
+    @return $paddingCalc
+}
 .btn{
     padding-left: map.get(v.$spacing-size,"300");
     padding-right: map.get(v.$spacing-size,"300");
@@ -13,8 +22,6 @@
     line-height:list.nth($text,2);
     font-weight: map.get(v.$text-weight,"normal");
     border-radius: map.get(v.$border-radius,"md");
-    box-sizing: border-box;
-    height: 32px;
 }
 
 .btn-primary{
@@ -39,6 +46,12 @@
 }
 
 .btn-secondary{
+    $paddingSec: heightAdjust(map.get(v.$spacing-size,"300"),map.get(v.$spacing-size,"300"),
+                              map.get(v.$spacing-size,"100"),map.get(v.$spacing-size,"100"));
+    padding-left:list.nth($paddingSec,1);
+    padding-right: list.nth($paddingSec,2);
+    padding-top: list.nth($paddingSec,3);
+    padding-bottom: list.nth($paddingSec,4);
     background-color: map.get(v.$color-base,"grey","000");
     border: 1px solid map.get(v.$color-theme,"400");
     color: map.get(v.$color-theme,"500");
