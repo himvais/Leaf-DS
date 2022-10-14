@@ -35,6 +35,7 @@
     border: none;
     cursor: pointer;
 }
+
 .btn-primary:active{
     background-color: darken(map.get(v.$color-theme,"500"),10%);
 }
