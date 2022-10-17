@@ -1,0 +1,57 @@
+@use "sass:map";
+@use "sass:list";
+@use "../variables" as v;
+
+$text:map.get(v.$text-size,"md");
+
+input:not([type=submit]):not([type=file]){
+    width: 240px;
+    font-size:list.nth($text,1);
+    line-height:list.nth($text,2);
+    font-weight: map.get(v.$text-weight,"normal");
+    border-radius: map.get(v.$border-radius,"md");
+    padding: 0px;
+    border: 1px solid map.get(v.$color-theme,"300");
+    color: map.get(v.$color-theme,"500");
+    //TODO: Change to variable
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 8px;
+
+    //Temp solution
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+}
+
+input:not([type=submit]):not([type=file]):focus{
+    outline: none;
+    border: 1px solid map.get(v.$color-theme,"400");
+    background-color: map.get(v.$color-theme,"100");
+}
+
+input:not([type=submit]):not([type=file]):disabled {
+    pointer-events: none;
+    background-color: map.get(v.$color-base,"grey","300");
+    color: map.get(v.$color-base,"grey","600");
+    border: none;
+}
+
+input::placeholder {
+    color: map.get(v.$color-theme,"300");
+}
+
+.input-group label{
+    //Temporary, will need to change this to allow content on the right hand side. 
+    display: block;
+    color: map.get(v.$color-base,"grey","600");
+    font-size:list.nth(map.get(v.$text-size,"sm"), 1);
+    line-height:list.nth(map.get(v.$text-size,"sm"), 2);
+    font-weight: map.get(v.$text-weight, "normal");
+    margin-bottom: map.get(v.$spacing-size, "100");
+}
+
+.input-group:focus-within label {
+    color: map.get(v.$color-base,"grey","900");
+}
+

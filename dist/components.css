@@ -7,6 +7,9 @@
   line-height: 24px;
   font-weight: 400;
   border-radius: 4px;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
 }
 
 .btn-primary {
@@ -66,4 +69,59 @@
 
 .btn-danger:active {
   background-color: #690124;
+}
+
+input:not([type=submit]):not([type=file]) {
+  width: 240px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  border-radius: 4px;
+  padding: 0px;
+  border: 1px solid #D4DAE5;
+  color: #193d68;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 8px;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+input:not([type=submit]):not([type=file]):focus {
+  outline: none;
+  border: 1px solid #1f4c82;
+  background-color: #f9fbfe;
+}
+
+input:not([type=submit]):not([type=file]):disabled {
+  pointer-events: none;
+  background-color: #D2D1D0;
+  color: #6B6B69;
+  border: none;
+}
+
+input::-moz-placeholder {
+  color: #D4DAE5;
+}
+
+input:-ms-input-placeholder {
+  color: #D4DAE5;
+}
+
+input::placeholder {
+  color: #D4DAE5;
+}
+
+.input-group label {
+  display: block;
+  color: #6B6B69;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  margin-bottom: 4px;
+}
+
+.input-group:focus-within label {
+  color: #1F1F1E;
 }/*# sourceMappingURL=components.css.map */

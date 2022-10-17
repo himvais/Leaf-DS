@@ -32,3 +32,8 @@ $("#button").click(function(){
     $("#content").load("_button.html");
     resetActive("#button");
 });
+
+$("#input").click(function(){
+    $("#content").load("_input.html");
+    resetActive("#input");
+});
