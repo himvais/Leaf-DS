@@ -80,9 +80,9 @@ input:not([type=submit]):not([type=file]) {
   padding: 0px;
   border: 1px solid #D4DAE5;
   color: #193d68;
+  padding-left: 8px;
   padding-top: 3px;
   padding-bottom: 3px;
-  padding-left: 8px;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms;

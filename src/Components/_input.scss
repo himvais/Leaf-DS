@@ -13,15 +13,13 @@ input:not([type=submit]):not([type=file]){
     padding: 0px;
     border: 1px solid map.get(v.$color-theme,"300");
     color: map.get(v.$color-theme,"500");
-    //TODO: Change to variable
-    padding-top: 3px;
-    padding-bottom: 3px;
-    padding-left: 8px;
-
-    //Temp solution
+    padding-left: map.get(v.$spacing-size,"200");
+    $paddingVer: v.heightAdjust(map.get(v.$spacing-size,"300"),map.get(v.$spacing-size,"100"));
+    padding-top: list.nth($paddingVer,2);
+    padding-bottom: list.nth($paddingVer,2);
     transition-property: all;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 300ms;
+    transition-timing-function: map.get(v.$transition-type,"cubic-bezier");
+    transition-duration: map.get(v.$transition-duration,"300");
 }
 
 input:not([type=submit]):not([type=file]):focus{

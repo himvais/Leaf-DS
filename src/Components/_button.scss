@@ -15,8 +15,8 @@
     border-radius: map.get(v.$border-radius,"md");
     //Temp solution
     transition-property: all;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 300ms;
+    transition-timing-function: map.get(v.$transition-type,"cubic-bezier");
+    transition-duration: map.get(v.$transition-duration,"300");;
 }
 
 .btn-primary{
