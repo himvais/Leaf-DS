@@ -124,14 +124,14 @@ input:not([type=submit]):not([type=file]):focus {
 
 .disabled {
   pointer-events: none;
-  background-color: #E7E5E4;
+  background-color: #D2D1D0;
   color: #6B6B69;
   border: none;
 }
 
 input:not([type=submit]):not([type=file]):disabled {
   pointer-events: none;
-  background-color: #E7E5E4;
+  background-color: #D2D1D0;
   color: #6B6B69;
   border: none;
 }

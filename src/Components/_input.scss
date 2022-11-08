@@ -58,14 +58,14 @@ input:not([type=submit]):not([type=file]):focus{
 }
 .disabled{
     pointer-events: none;
-    background-color: map.get(v.$color-base,"grey","200");
+    background-color: map.get(v.$color-base,"grey","300");
     color: map.get(v.$color-base,"grey","600");
     border: none;
 }
 
 input:not([type=submit]):not([type=file]):disabled {
     pointer-events: none;
-    background-color: map.get(v.$color-base,"grey","200");
+    background-color: map.get(v.$color-base,"grey","300");
     color: map.get(v.$color-base,"grey","600");
     border: none;
 }
