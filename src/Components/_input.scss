@@ -31,7 +31,6 @@ input:not([type=submit]):not([type=file]):focus{
 
 .input-error{
     border: 1px solid map.get(v.$color-base,"red","500") !important;
-    background-color: map.get(v.$color-base,"red","100");
 }
 .error{
     color: map.get(v.$color-base,"red","500");
@@ -40,6 +39,10 @@ input:not([type=submit]):not([type=file]):focus{
 }
 
 .textarea{
+    padding-left: map.get(v.$spacing-size,"200");
+    $paddingVer: v.heightAdjust(map.get(v.$spacing-size,"300"),map.get(v.$spacing-size,"100"));
+    padding-top: list.nth($paddingVer,2);
+    padding-bottom: list.nth($paddingVer,2);
     border: 1px solid map.get(v.$color-theme,"300");
     color: map.get(v.$color-theme,"500");  
     font-size:list.nth($text,1);
@@ -70,7 +73,7 @@ input:not([type=submit]):not([type=file]):disabled {
     border: none;
 }
 
-input::placeholder {
+::placeholder {
     color: map.get(v.$color-theme,"300");
 }
 
@@ -78,8 +81,8 @@ input::placeholder {
     //Temporary, will need to change this to allow content on the right hand side. 
     display: block;
     color: map.get(v.$color-base,"grey","600");
-    font-size:list.nth(map.get(v.$text-size,"sm"), 1);
-    line-height:list.nth(map.get(v.$text-size,"sm"), 2);
+    font-size:list.nth($sub-text,1);
+    line-height:list.nth($sub-text,2);
     font-weight: map.get(v.$text-weight, "normal");
     margin-bottom: map.get(v.$spacing-size, "100");
 }

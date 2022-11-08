@@ -11,7 +11,7 @@ $colour: (
     "disabled": map.get(v.$color-base,"grey","500")
 );
 
-.html, body{
+.html, body,textarea{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
