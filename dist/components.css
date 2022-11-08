@@ -94,6 +94,17 @@ input:not([type=submit]):not([type=file]):focus {
   background-color: #f9fbfe;
 }
 
+.input-error {
+  border: 1px solid #C40043 !important;
+  background-color: #F7EDF1;
+}
+
+.error {
+  color: #C40043;
+  font-size: 14px;
+  line-height: 16px;
+}
+
 input:not([type=submit]):not([type=file]):disabled {
   pointer-events: none;
   background-color: #D2D1D0;

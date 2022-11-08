@@ -3,6 +3,7 @@
 @use "../variables" as v;
 
 $text:map.get(v.$text-size,"md");
+$sub-text:map.get(v.$text-size,"sm");
 
 input:not([type=submit]):not([type=file]){
     width: 240px;
@@ -26,6 +27,16 @@ input:not([type=submit]):not([type=file]):focus{
     outline: none;
     border: 1px solid map.get(v.$color-theme,"400");
     background-color: map.get(v.$color-theme,"100");
+}
+
+.input-error{
+    border: 1px solid map.get(v.$color-base,"red","500") !important;
+    background-color: map.get(v.$color-base,"red","100");
+}
+.error{
+    color: map.get(v.$color-base,"red","500");
+    font-size:list.nth($sub-text,1);
+    line-height:list.nth($sub-text,2);
 }
 
 input:not([type=submit]):not([type=file]):disabled {
