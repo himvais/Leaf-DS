@@ -39,6 +39,30 @@ input:not([type=submit]):not([type=file]):focus{
     line-height:list.nth($sub-text,2);
 }
 
+.textarea{
+    border: 1px solid map.get(v.$color-theme,"300");
+    color: map.get(v.$color-theme,"500");  
+    font-size:list.nth($text,1);
+    line-height:list.nth($text,2);
+    font-weight: map.get(v.$text-weight,"normal");
+    border-radius: map.get(v.$border-radius,"md");
+    width: 240px;
+    height: 80px;
+}
+
+.textarea:focus{
+    outline: none;
+    border: 1px solid map.get(v.$color-theme,"400");
+    background-color: map.get(v.$color-theme,"100");
+    
+}
+.disabled{
+    pointer-events: none;
+    background-color: map.get(v.$color-base,"grey","300");
+    color: map.get(v.$color-base,"grey","600");
+    border: none;
+}
+
 input:not([type=submit]):not([type=file]):disabled {
     pointer-events: none;
     background-color: map.get(v.$color-base,"grey","300");

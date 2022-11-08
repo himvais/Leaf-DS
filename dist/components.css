@@ -105,6 +105,30 @@ input:not([type=submit]):not([type=file]):focus {
   line-height: 16px;
 }
 
+.textarea {
+  border: 1px solid #D4DAE5;
+  color: #193d68;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  border-radius: 4px;
+  width: 240px;
+  height: 80px;
+}
+
+.textarea:focus {
+  outline: none;
+  border: 1px solid #1f4c82;
+  background-color: #f9fbfe;
+}
+
+.disabled {
+  pointer-events: none;
+  background-color: #D2D1D0;
+  color: #6B6B69;
+  border: none;
+}
+
 input:not([type=submit]):not([type=file]):disabled {
   pointer-events: none;
   background-color: #D2D1D0;
