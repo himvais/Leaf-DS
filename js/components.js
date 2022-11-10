@@ -33,7 +33,12 @@ $("#button").click(function(){
     resetActive("#button");
 });
 
-$("#input").click(function(){
-    $("#content").load("_input.html");
-    resetActive("#input");
+$("#textinput").click(function(){
+    $("#content").load("_textinput.html");
+    resetActive("#textinput");
+});
+
+$("#textarea").click(function(){
+    $("#content").load("_textarea.html");
+    resetActive("#textarea");
 });
