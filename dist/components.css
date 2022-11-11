@@ -161,4 +161,59 @@ input:not([type=submit]):not([type=file]):disabled {
 
 .input-group:focus-within label {
   color: #1F1F1E;
+}
+
+input[type=file]::-webkit-file-upload-button {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  font-weight: 400 !important;
+  border-radius: 4px;
+  -webkit-transition-property: all;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+  background-color: #1f4c82;
+  border: none;
+  color: #FFFFFF;
+}
+
+input[type=file]::file-selector-button {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  font-weight: 400 !important;
+  border-radius: 4px;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+  background-color: #1f4c82;
+  border: none;
+  color: #FFFFFF;
+}
+
+input[type=file]::-webkit-file-upload-button:hover {
+  background-color: #193d68;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=file]::file-selector-button:hover {
+  background-color: #193d68;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=file]::-webkit-file-upload-button:active {
+  background-color: #0f253f;
+}
+
+input[type=file]::file-selector-button:active {
+  background-color: #0f253f;
 }/*# sourceMappingURL=components.css.map */
