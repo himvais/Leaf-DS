@@ -34,7 +34,24 @@ $("#button").click(function(){
 });
 
 $("#textinput").click(function(){
-    $("#content").load("_textinput.html");
+    $("#content").load("_textinput.html",function(){
+        $(document).ready( function() {
+            $('#falseinput').click(function(){
+              $("#fileinput").click();
+            });
+          });
+          $('#fileinput').change(function() {
+            $('#selected_filename').html(`<span>${$('#fileinput')[0].files[0].name}
+            <i id="delete_file" class=" icon-hover ml-100 fa-regular fa-trash"></i></span>`);
+            $('#delete_file').click(function(e){
+                e.preventDefault();
+                $('#fileinput').val(null);
+                console.log($('#fileinput').val());
+                $('#selected_filename').html(`<span>No file selected</span>`);
+            });
+          });
+          
+    });
     resetActive("#textinput");
 });
 
@@ -42,3 +59,6 @@ $("#textarea").click(function(){
     $("#content").load("_textarea.html");
     resetActive("#textarea");
 });
+
+
+  
