@@ -164,11 +164,18 @@ input:not([type=submit]):not([type=file]):disabled {
 }
 
 .filename_bg {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   font-size: 16px;
   line-height: 24px;
   background-color: #E7E5E4;
   border: dashed 1px #D2D1D0;
   border-radius: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 
 .icon-hover {

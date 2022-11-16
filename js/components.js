@@ -41,8 +41,8 @@ $("#textinput").click(function(){
             });
           });
           $('#fileinput').change(function() {
-            $('#selected_filename').html(`<span>${$('#fileinput')[0].files[0].name}
-            <i id="delete_file" class=" icon-hover ml-100 fa-regular fa-trash"></i></span>`);
+            $('#selected_filename').html(`<span class="mr-200">${$('#fileinput')[0].files[0].name}
+            <i id="delete_file" class=" icon-hover ml-200 fa-regular fa-trash"></i></span>`);
             $('#delete_file').click(function(e){
                 e.preventDefault();
                 $('#fileinput').val(null);
