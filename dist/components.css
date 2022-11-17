@@ -71,7 +71,7 @@
   background-color: #690124;
 }
 
-input:not([type=submit]):not([type=file]) {
+input:not([type=submit]):not([type=file]), #dropdown-menu {
   width: 240px;
   font-size: 16px;
   line-height: 24px;
@@ -88,7 +88,7 @@ input:not([type=submit]):not([type=file]) {
   transition-duration: 300ms;
 }
 
-input:not([type=submit]):not([type=file]):focus {
+input:not([type=submit]):not([type=file]):focus, #dropdown-menu {
   outline: none;
   border: 1px solid #1f4c82;
   background-color: #f9fbfe;
@@ -184,4 +184,25 @@ input:not([type=submit]):not([type=file]):disabled {
 
 .icon-hover:hover {
   color: #C40043;
+}
+
+#dropdown-menu {
+  padding-right: 8px;
+  border-radius: 4px;
+}
+
+.dropdown-options {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.select {
+  position: relative;
+  display: block;
+  width: 15em;
+  height: 2em;
+  line-height: 3;
+  overflow: hidden;
+  border-radius: 0.25em;
+  padding-bottom: 10px;
 }/*# sourceMappingURL=components.css.map */

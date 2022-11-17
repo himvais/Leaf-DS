@@ -5,7 +5,7 @@
 $text:map.get(v.$text-size,"md");
 $sub-text:map.get(v.$text-size,"sm");
 
-input:not([type=submit]):not([type=file]){
+input:not([type=submit]):not([type=file]),#dropdown-menu{
     width: 240px;
     font-size:list.nth($text,1);
     line-height:list.nth($text,2);
@@ -23,7 +23,7 @@ input:not([type=submit]):not([type=file]){
     transition-duration: map.get(v.$transition-duration,"300");
 }
 
-input:not([type=submit]):not([type=file]):focus{
+input:not([type=submit]):not([type=file]):focus , #dropdown-menu{
     outline: none;
     border: 1px solid map.get(v.$color-theme,"400");
     background-color: map.get(v.$color-theme,"100");

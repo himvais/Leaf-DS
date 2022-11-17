@@ -42,7 +42,7 @@ $("#textinput").click(function(){
           });
           $('#fileinput').change(function() {
             $('#selected_filename').html(`<span class="mr-200">${$('#fileinput')[0].files[0].name}
-            <i id="delete_file" class=" icon-hover ml-200 fa-regular fa-trash"></i></span>`);
+            <i id="delete_file" class=" icon-hover ml-200 fa-solid fa-trash"></i></span>`);
             $('#delete_file').click(function(e){
                 e.preventDefault();
                 $('#fileinput').val(null);
@@ -58,6 +58,11 @@ $("#textinput").click(function(){
 $("#textarea").click(function(){
     $("#content").load("_textarea.html");
     resetActive("#textarea");
+});
+
+$("#dropdown").click(function(){
+    $("#content").load("_dropdown.html");
+    resetActive("#dropdown");
 });
 
 
