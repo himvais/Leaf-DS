@@ -1,0 +1,29 @@
+@use "sass:map";
+@use "sass:list";
+@use "../variables" as v;
+
+.table{
+    width: fit-content;
+    max-width: 80%;
+    margin-right: map.get(v.$spacing-size,"400");
+}
+.table, .table-header , .table-data{
+    border: 1px solid map.get(v.$color-base,"grey","300");
+    text-align: left;
+    border-collapse: collapse;
+    $text:map.get(v.$text-size,"md");
+    font-size:list.nth($text,1);
+    line-height:list.nth($text,2);
+}
+
+.table-header{
+    background-color: map.get(v.$color-base,"grey","100");
+}
+
+.table-header, .table-data {
+    padding-top: map.get(v.$spacing-size,"200");
+    padding-bottom: map.get(v.$spacing-size,"200");
+    padding-left: map.get(v.$spacing-size,"300");
+    padding-right: map.get(v.$spacing-size,"300");
+    color: map.get(v.$color-base,"grey","800");
+}

@@ -65,5 +65,10 @@ $("#dropdown").click(function(){
     resetActive("#dropdown");
 });
 
+$("#table").click(function(){
+    $("#content").load("_table.html");
+    resetActive("#table");
+});
+
 
   
