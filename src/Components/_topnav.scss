@@ -1,0 +1,57 @@
+@use "sass:map";
+@use "sass:list";
+@use "../variables" as v;
+
+#navigation{
+    position:sticky;
+    position: -webkit-sticky;
+    top:0;
+    z-index: 2;
+}
+
+.navbar{
+    height: 56px;
+    width: 100%;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.08);
+    -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.08);
+}
+
+.navbar-links{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    margin-right: 24px;
+    color:#333333;
+}
+
+.navbar-link{
+    margin-left: 8px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #333333;
+    padding:8px;
+}
+
+.navbar-link:hover{
+    background-color: rgb(223, 255, 228);
+    cursor: pointer;
+    color:rgb(1, 88, 33);
+    color: map.get(v.$color-base,"green","500");;
+    border-radius: 5px;
+}
+
+.navbar-link-active{
+    color: rgb(1, 88, 33);
+    font-weight: bold;
+}
+
+.logo{
+    margin-left: 24px;
+    font-weight: bold;
+    color:rgb(1, 88, 33);
+}
